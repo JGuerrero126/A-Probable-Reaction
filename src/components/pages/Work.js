@@ -23,22 +23,6 @@ export default function Work() {
       <div className="custom-container">
         <a
           className="repolink"
-          href="https://github.com/JGuerrero126/Code-Quiz"
-        >
-          GitHub Repository
-        </a>
-        <a href="https://jguerrero126.github.io/Code-Quiz/">
-          <img id="CQ" src={require("../../Images/ScreenshotCQ.png")} />
-          <div className="caption">
-            Coding Quiz
-            <br />
-            HTML/CSS/JS
-          </div>
-        </a>
-      </div>
-      <div className="custom-container">
-        <a
-          className="repolink"
           href="https://github.com/EthanP94/The-Recipe-Box"
         >
           GitHub Repository
@@ -65,6 +49,38 @@ export default function Work() {
             Weather Dashboard
             <br />
             HTML/CSS/JS
+          </div>
+        </a>
+      </div>
+      <div className="custom-container">
+        <a
+          className="repolink"
+          href="https://github.com/JGuerrero126/The_CYBER_Zone"
+        >
+          GitHub Repository
+        </a>
+        <a href="https://boiling-mountain-75140.herokuapp.com/">
+          <img id="TCZ" src={require("../../Images/ScreenshotTCZ.png")} />
+          <div className="caption">
+            THE CYBER ZONE
+            <br />
+            FULL STACK
+          </div>
+        </a>
+      </div>
+      <div className="custom-container">
+        <a
+          className="repolink"
+          href="https://github.com/JGuerrero126/Day-Planner"
+        >
+          GitHub Repository
+        </a>
+        <a href="https://jguerrero126.github.io/Day-Planner/">
+          <img id="DP" src={require("../../Images/ScreenshotDP.png")} />
+          <div className="caption">
+            Day Planner
+            <br />
+            HTML/JS
           </div>
         </a>
       </div>
