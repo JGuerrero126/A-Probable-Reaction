@@ -84,6 +84,22 @@ export default function Work() {
           </div>
         </a>
       </div>
+      <div className="custom-container">
+        <a
+          className="repolink"
+          href="https://github.com/JGuerrero126/Day-Planner"
+        >
+          GitHub Repository
+        </a>
+        <a href="https://jguerrero126.github.io/Day-Planner/">
+          <img id="DP" src={require("../../Images/ScreenshotDP.png")} />
+          <div className="caption">
+            Day Planner
+            <br />
+            HTML/JS
+          </div>
+        </a>
+      </div>
     </div>
   );
 }
