@@ -4,8 +4,8 @@ import React from "react";
 // We assign them to their own variable names
 function Footer() {
   return (
-    <div>
-      <h4>This Site Made By Jerry Guerrero, Made with React.</h4>
+    <div className="footer">
+      <h4>This Site Made By Jerry Guerrero on React.</h4>
     </div>
   );
 }

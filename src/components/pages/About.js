@@ -6,22 +6,26 @@ export default function About() {
       <h1>About Me</h1>
       <img src={require("../../Images/avatar.png")} />
       <p>
-        I am a coding student currently going through the coding bootcamp at
-        UCLA Extension. I enjoy collecting manga and vinyl as well as playing
-        video games. You can usually find me buried deep in some existential
-        nightmare like
+        I am a Full Stack Developer who graduated from UCLA Extension Coding
+        Bootcamp. I enjoy collecting manga and vinyl as well as playing video
+        games. You can usually find me buried deep in some existential nightmare
+        like
         <span>
-          <a href="https://en.wikipedia.org/wiki/Berserk_(manga)">"Berserk"</a>
+          <a href="https://en.wikipedia.org/wiki/Berserk_(manga)">
+            {" "}
+            "Berserk"{" "}
+          </a>
         </span>
         or
         <span>
           <a href="https://en.wikipedia.org/wiki/Vagabond_(manga)">
-            "Vagabond"
+            {" "}
+            "Vagabond"{" "}
           </a>
         </span>
         or slaughtering demons by the hundreds in
         <span>
-          <a href="https://en.wikipedia.org/wiki/Doom_Eternal">"DOOM"</a>
+          <a href="https://en.wikipedia.org/wiki/Doom_Eternal"> "DOOM"</a>
         </span>
         . When I'm not at my desk making all kinds of cool stuff, of course.
         I've been hard at work to get into multiple fields including Art,
@@ -29,7 +33,8 @@ export default function About() {
         like the great
         <span>
           <a href="https://en.wikipedia.org/wiki/Takeshi_Kitano">
-            Beat Takeshi
+            {" "}
+            Beat Takeshi{" "}
           </a>
         </span>
         from Japan.

@@ -84,19 +84,19 @@ export default function Work() {
           </div>
         </a>
       </div>
-      <div className="custom-container">
+      <div class="custom-container">
         <a
-          className="repolink"
-          href="https://github.com/JGuerrero126/Day-Planner"
+          class="repolink"
+          href="https://github.com/zionremnant/collection-conquest"
         >
           GitHub Repository
         </a>
-        <a href="https://jguerrero126.github.io/Day-Planner/">
-          <img id="DP" src={require("../../Images/ScreenshotDP.png")} />
-          <div className="caption">
-            Day Planner
+        <a href="https://dry-island-54181.herokuapp.com/">
+          <img id="WD" src={require("../../Images/ScreenshotCC.png")} />
+          <div class="caption">
+            Collection Conquest
             <br />
-            HTML/JS
+            MERN STACK
           </div>
         </a>
       </div>
