@@ -6,7 +6,6 @@ export default function Contact() {
     fontFamily: "Gentium Plus",
     fontSize: "3rem",
     marginTop: "1rem",
-    marginLeft: "1rem",
     position: "absolute",
     zIndex: "2",
     textAlign: "left",
@@ -28,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-me">
+    <div className="contact">
       <Box sx={boxStyle}>
         <Text mb="5rem" color="white">
           Contact Me Here!
@@ -105,7 +104,7 @@ export default function Contact() {
           type="video/mp4"
           style={{
             height: "100vh",
-            width: "100vw",
+            width: "100%",
             objectFit: "cover",
             pointerEvents: "none",
           }}

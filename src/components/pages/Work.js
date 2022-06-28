@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Image,
   Center,
   Box,
   Text,
   Link,
-  HStack,
   Wrap,
   VStack,
+  Spacer,
 } from "@chakra-ui/react";
 
 export default function Work() {
@@ -20,7 +20,7 @@ export default function Work() {
   };
 
   const imageStyle = {
-    boxSize: "25rem",
+    boxSize: ["10rem", "20rem"],
     objectFit: "cover",
   };
 
@@ -31,13 +31,13 @@ export default function Work() {
 
   const textStyle = {
     fontSize: "2rem",
-    marginBottom: "2rem",
+    marginBottom: "1rem",
     color: "white",
   };
 
   const linkStyle = {
     color: "lightcoral",
-    ml: "2rem",
+    // ml: "2rem",
     textDecoration: "none",
     fontSize: "140%",
     transition: "0.5s",
@@ -72,6 +72,7 @@ export default function Work() {
             >
               GitHub Repository
             </Link>
+            <Spacer />
             <Link
               className="links"
               isExternal
@@ -83,14 +84,14 @@ export default function Work() {
           </Box>
         </VStack>
         <Wrap fontFamily="Gentium Plus" justify="center" spacing="2rem">
-          <HStack>
+          <VStack direction={["column", "row"]}>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
                 src={require("../../Images/ScreenshotTSW.png")}
               />
             </Box>
-            <Box textAlign="center">
+            <Box minWidth="20rem" textAlign="center">
               <Text sx={textStyle}>The Sorrow Work</Text>
               <Text sx={textStyle}>MERN Stack</Text>
               <Link
@@ -101,6 +102,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -110,8 +112,8 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
-          <HStack>
+          </VStack>
+          <VStack>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
@@ -129,6 +131,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -138,8 +141,8 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
-          <HStack>
+          </VStack>
+          <VStack>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
@@ -157,6 +160,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -166,8 +170,8 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
-          <HStack>
+          </VStack>
+          <VStack>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
@@ -185,6 +189,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -194,8 +199,8 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
-          <HStack>
+          </VStack>
+          <VStack>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
@@ -213,6 +218,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -222,8 +228,8 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
-          <HStack>
+          </VStack>
+          <VStack>
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
@@ -241,6 +247,7 @@ export default function Work() {
               >
                 GitHub Repository
               </Link>
+              <Spacer />
               <Link
                 className="links"
                 isExternal
@@ -250,7 +257,7 @@ export default function Work() {
                 Live Website
               </Link>
             </Box>
-          </HStack>
+          </VStack>
         </Wrap>
         <Center sx={headingStyle}>Short Films / Music Videos</Center>
         <Wrap justify="center" spacing="2rem">

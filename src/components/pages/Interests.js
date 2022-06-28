@@ -11,11 +11,6 @@ import {
 import React from "react";
 
 export default function Home() {
-  const headingStyle = {
-    color: "white",
-    fontFamily: "Gentium Plus",
-  };
-
   const textStyle = {
     color: "white",
     fontFamily: "Gentium Plus",
@@ -42,17 +37,12 @@ export default function Home() {
         paddingTop="1rem"
         paddingBottom="4rem"
       >
-        <Center sx={headingStyle} fontSize="4rem" mb="4rem">
+        <Center fontSize="4rem" mb="4rem">
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
           <VStack>
-            <Center
-              className="berserk"
-              color="red"
-              sx={headingStyle}
-              fontSize="3rem"
-            >
+            <Center className="berserk" color="red" fontSize="3rem">
               BERSERK
             </Center>
             <Box sx={boxStyle}>
@@ -77,7 +67,7 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack>
-            <Center className="vagabond" sx={headingStyle} fontSize="3rem">
+            <Center className="vagabond" fontSize="3rem">
               Vagabond
             </Center>
             <Box sx={boxStyle}>
@@ -98,7 +88,7 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack>
-            <Center className="jojo" sx={headingStyle} fontSize="2.5rem">
+            <Center className="jojo" fontSize="2.5rem">
               JoJo's BIZARRE ADVENTURE
             </Center>
             <Box sx={boxStyle}>
@@ -120,7 +110,7 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack>
-            <Center className="metallica" sx={headingStyle} fontSize="3rem">
+            <Center className="metallica" fontSize="3rem">
               METALLICA
             </Center>
             <Box sx={boxStyle}>
@@ -138,7 +128,7 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack>
-            <Center className="bladeRunner" sx={headingStyle} fontSize="3rem">
+            <Center className="bladeRunner" fontSize="3rem">
               BLADE RUNNER 2049
             </Center>
             <Box sx={boxStyle}>
@@ -159,7 +149,7 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack>
-            <Center className="eldenRing" sx={headingStyle} fontSize="3rem">
+            <Center className="eldenRing" fontSize="3rem">
               Elden Ring
             </Center>
             <Box sx={boxStyle}>
