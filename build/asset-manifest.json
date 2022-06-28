@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02d217f5.css",
+    "main.js": "/static/js/main.d8faab2d.js",
+    "static/media/Sunflowers.mp4": "/static/media/Sunflowers.0f4c0ffacd43824163d9.mp4",
+    "static/media/jelly.mp4": "/static/media/jelly.7148f996adf96456aeb0.mp4",
+    "static/media/WateringPlant.mp4": "/static/media/WateringPlant.e8792212b922a81b6701.mp4",
+    "static/media/BigScreenshotCC.png": "/static/media/BigScreenshotCC.3909eee040b30cde91e0.png",
+    "static/media/ScreenshotTRB.png": "/static/media/ScreenshotTRB.2c6fca306238a562ed6f.png",
+    "static/media/ScreenshotAYMN.jpeg": "/static/media/ScreenshotAYMN.b71605a78d8a63d06835.jpeg",
+    "static/media/BladeRunnerCover.jpg": "/static/media/BladeRunnerCover.c9a4fa3fc1e2b947b988.jpg",
+    "static/media/EldenRingMovieCover.jpg": "/static/media/EldenRingMovieCover.18ae3c0015bac99323d8.jpg",
+    "static/media/ScreenshotTCZ.png": "/static/media/ScreenshotTCZ.865f930ab028c101a64d.png",
+    "static/media/ScreenshotTHS.png": "/static/media/ScreenshotTHS.bb0cca529ab1dcc22758.png",
+    "static/media/JojoCover.jpg": "/static/media/JojoCover.d3ac15478566da828de4.jpg",
+    "static/media/MetallicaCover.jpg": "/static/media/MetallicaCover.f4f25a6d1e6366e1210c.jpg",
+    "static/media/VagabondCover.png": "/static/media/VagabondCover.52212c88184b76656e01.png",
+    "static/media/avatar.png": "/static/media/avatar.17505f5757e36346aa73.png",
+    "static/media/BerserkCover.png": "/static/media/BerserkCover.21ff51dcb3bcbe76d7dc.png",
+    "static/media/ScreenshotWD.png": "/static/media/ScreenshotWD.e96a2f31db09c484e334.png",
+    "static/media/ScreenshotTSW.png": "/static/media/ScreenshotTSW.22753200a376c91239e5.png",
+    "static/media/JerryResumeFinal.docx": "/static/media/JerryResumeFinal.fd52a126fef67ca99288.docx",
+    "index.html": "/index.html",
+    "main.02d217f5.css.map": "/static/css/main.02d217f5.css.map",
+    "main.d8faab2d.js.map": "/static/js/main.d8faab2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02d217f5.css",
+    "static/js/main.d8faab2d.js"
+  ]
+}
