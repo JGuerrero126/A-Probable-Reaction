@@ -1,47 +1,116 @@
 import React from "react";
+import { Text, Link, Box } from "@chakra-ui/react";
 
 export default function Contact() {
+  const boxStyle = {
+    fontFamily: "Gentium Plus",
+    fontSize: "3rem",
+    marginTop: "1rem",
+    marginLeft: "1rem",
+    position: "absolute",
+    zIndex: "2",
+    textAlign: "left",
+    width: "100%",
+  };
+
+  const linkStyle = {
+    fontFamily: "Gentium Plus",
+    fontSize: "3rem",
+    color: "green",
+    textDecoration: "none",
+    transition: "0.5s",
+  };
+
+  const textStyle = {
+    marginTop: "2rem",
+    textAlign: "left",
+    marginLeft: "1rem",
+  };
+
   return (
     <div className="contact-me">
-      <h1>Contact Me Here!</h1>
-      <ul>
-        <li>
-          <a
+      <Box sx={boxStyle}>
+        <Text mb="5rem" color="white">
+          Contact Me Here!
+        </Text>
+
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
             href="https://www.linkedin.com/in/jerryguerrero126/"
-            target="_blank"
           >
             LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="mailto:JerryGDev126@gmail.com" target="_blank">
+          </Link>
+        </Text>
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
+            href="mailto:JerryGDev126@gmail.com"
+          >
             Email
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/JGuerrero126" target="_blank">
+          </Link>
+        </Text>
+
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
+            href="https://github.com/JGuerrero126"
+          >
             Github
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Metallica" target="_blank">
+          </Link>
+        </Text>
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
+            href="https://twitter.com/Metallica"
+          >
             Twitter
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          </Link>
+        </Text>
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          >
             Spotify
-          </a>
-        </li>
-        <li>
-          <a
-            href={require("../../Images/JerryResume5102022.pdf")}
+          </Link>
+        </Text>
+        <Text sx={textStyle}>
+          <Link
+            className="contactLinks"
+            sx={linkStyle}
+            isExternal
+            href={require("../../Images/JerryResumeFinal.docx")}
             download="Resume"
           >
             Resume
-          </a>
-        </li>
-      </ul>
+          </Link>
+        </Text>
+      </Box>
+      <Box filter="auto" blur="3px" position="relative">
+        <video
+          loop
+          autoPlay
+          src={require("../../Images/WateringPlant.mp4")}
+          type="video/mp4"
+          style={{
+            height: "100vh",
+            width: "100vw",
+            objectFit: "cover",
+            pointerEvents: "none",
+          }}
+        ></video>
+      </Box>
     </div>
   );
 }

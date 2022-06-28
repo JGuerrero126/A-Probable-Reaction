@@ -6,25 +6,37 @@
   --darkgray: #3d3d3d;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Metal+Mania&family=Noto+Serif+JP:wght@900&family=Permanent+Marker&family=Rubik+Glitch&display=swap");
 
 * {
-  font-family: var(--font);
-}
-.hero {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
+  font-family: "Gentium Plus", serif;
 }
 
-/* .imgcaption {
-  font-family: var(--font);
-  float: right;
-  font-size: 200%;
-} */
+.navbar {
+  border-bottom: lightblue inset 4px;
+  background-color: midnightblue;
+  padding: 2rem;
+  margin: 0;
+  box-shadow: 1px 1px 6px inset lightblue;
+}
+
+.navbar .active {
+  color: lightblue;
+  text-shadow: black 0.2rem 0.2rem;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+
+.navbar li a {
+  font-family: "Gentium Plus", serif;
+  text-decoration: none;
+  color: snow;
+}
 
 h1 {
   font-size: 200%;
@@ -48,99 +60,84 @@ h1:hover {
   bottom: 0;
   right: 0;
   height: 2.5rem;
-  color: var(--red);
+  color: white;
 }
 
 .about-me img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1rem groove #ba0000;
+  border: 1rem groove #fba914;
   transition: 0.5s;
 }
 
 .about-me img:hover {
-  box-shadow: 0.1rem 0.1rem 1rem var(--red);
+  box-shadow: 0.1rem 0.1rem 4rem #e8de2a;
 }
 
-.about-me p {
-  font-size: 150%;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 300px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  transition: 0.5s;
-}
-
-.about-me a,
-.repolink {
-  color: black;
+.about-me a {
+  color: whitesmoke;
   text-decoration: none;
   transition: 1s;
 }
 
-.about-me p:hover a,
-.repolink:hover {
-  color: var(--red);
+.about-me p:hover a {
+  color: #bac53e;
 }
 
-.about-me p:hover {
-  text-shadow: 0.1rem 0.1rem 1rem var(--gray);
-  color: black;
+.interestsBackground {
+  background-image: linear-gradient(lightblue, midnightblue, purple, #aa0000);
 }
 
-.custom-container,
-.custom-container a,
-.custom-container img {
-  width: 450px;
-  margin-top: 10px;
-  position: relative;
-  display: inline-block;
-  transition: 0.5s;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+.berserk {
+  font-family: "anton", sans-serif;
+  color: #aa0000;
 }
 
-.repolink {
-  text-decoration: none;
-  font-size: 140%;
-  margin-left: 5rem;
+.vagabond {
+  font-family: "Permanent Marker", cursive;
+  color: #bac53e;
 }
 
-.caption {
-  position: absolute;
-  top: 50px;
-  left: 5px;
-  background-color: black;
-  border-radius: 8px;
-  padding: 25px;
-  margin-left: 15px;
+.jojo {
+  font-family: "Noto Serif JP", serif;
 }
 
-.work div {
-  color: var(--white);
-  transition: 1s;
+.metallica {
+  font-family: "Metal Mania", cursive;
 }
 
-.work img:hover {
-  box-shadow: 4px 4px 4px var(--gray);
-  border: 6px solid var(--white);
+.bladeRunner {
+  font-family: "Rubik Glitch", cursive;
+  color: aqua;
 }
 
-.work a:hover div {
-  background-color: var(--white);
-  color: var(--red);
+.eldenRing {
+  font-family: "Metal Mania", cursive;
+  color: gold;
 }
 
-.work img {
-  border: 2px solid var(--gray);
+.workBackground {
+  background-image: repeating-linear-gradient(
+    lightblue,
+    midnightblue,
+    lightblue
+  );
 }
 
-.contact-me a {
-  color: black;
-  text-decoration: none;
-  transition: 0.5s;
+.links:hover {
+  color: #ba0000;
+  text-decoration: underline;
+}
+
+.contactLinks {
+  font-family: "Noto Serif JP", serif;
+}
+
+.contactLinks:hover {
+  color: greenyellow;
+  text-decoration: underline;
+  font-size: 115%;
 }
 
 .contact-me ul li {
@@ -148,6 +145,10 @@ h1:hover {
   margin-left: 100px;
   flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+.creditsBackground {
+  background-image: linear-gradient(lightblue, midnightblue);
 }
 
 @media screen and (max-width: 992px) {
@@ -161,14 +162,6 @@ h1:hover {
 
   .about-me p {
     font-size: 170%;
-    margin-left: 100px;
-  }
-
-  .work a,
-  .work figure {
-    margin-left: 90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   .hero {

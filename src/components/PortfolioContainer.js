@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Interests from "./pages/Interests";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
+import Credits from "./pages/Credits";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -17,10 +19,16 @@ export default function PortfolioContainer() {
     if (currentPage === "About") {
       return <About />;
     }
+    if (currentPage === "Interests") {
+      return <Interests />;
+    }
     if (currentPage === "Work") {
       return <Work />;
     }
-    return <Contact />;
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+    return <Credits />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
