@@ -69,7 +69,7 @@ export default function Contact() {
             className="contactLinks"
             sx={linkStyle}
             isExternal
-            href="https://twitter.com/Metallica"
+            href="https://twitter.com/DevJerry126"
           >
             Twitter
           </Link>

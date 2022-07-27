@@ -15,7 +15,7 @@ This is my portfolio remade using React.
 
 ---
 
-The following technology was used in this project: REACT, CSS, JAVASCRIPT, EXPRESS, NODE and GitHub Pages
+The following technology was used in this project: REACT, CSS, JAVASCRIPT, EXPRESS, NODE and HEROKU
 
 ## Installation
 
@@ -43,6 +43,8 @@ This project is not accepting any contributions at this time.
 ![Screenshot2](Screenshot2.png)
 ![Screenshot3](Screenshot3.png)
 ![Screenshot4](Screenshot4.png)
+![Screenshot5](Screenshot5.png)
+![Screenshot6](Screenshot6.png)
 
 ## Questions
 
