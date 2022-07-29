@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Image,
   Center,
@@ -8,6 +8,7 @@ import {
   Wrap,
   VStack,
   Spacer,
+  Img,
 } from "@chakra-ui/react";
 
 export default function Work() {
@@ -37,7 +38,6 @@ export default function Work() {
 
   const linkStyle = {
     color: "lightcoral",
-    // ml: "2rem",
     textDecoration: "none",
     fontSize: "140%",
     transition: "0.5s",
@@ -56,8 +56,15 @@ export default function Work() {
         <VStack justify="center" mb="4rem">
           <Box w="75%" sx={boxStyle}>
             <Image
-              // sx={imageStyle}
               boxSize="100%"
+              // w="100%"
+              // h="35rem"
+              // onMouseEnter={(e) =>
+              //   (e.target.src = require("../../Images/CC.gif"))
+              // }
+              // onMouseLeave={(e) =>
+              //   (e.target.src = require("../../Images/BigScreenshotCC.png"))
+              // }
               src={require("../../Images/BigScreenshotCC.png")}
             />
           </Box>
@@ -86,7 +93,7 @@ export default function Work() {
         <Wrap fontFamily="Gentium Plus" justify="center" spacing="2rem">
           <VStack direction={["column", "row"]}>
             <Box sx={boxStyle}>
-              <Image
+              <Img
                 sx={imageStyle}
                 src={require("../../Images/ScreenshotTSW.png")}
               />

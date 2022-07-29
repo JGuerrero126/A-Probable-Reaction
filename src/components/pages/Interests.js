@@ -1,13 +1,4 @@
-import {
-  Box,
-  Text,
-  Center,
-  Image,
-  Wrap,
-  WrapItem,
-  VStack,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Text, Center, Image, Wrap, VStack, Link } from "@chakra-ui/react";
 import React from "react";
 
 export default function Home() {
@@ -55,7 +46,10 @@ export default function Home() {
                 isExternal
                 href="https://en.wikipedia.org/wiki/Berserk_(manga)"
               >
-                <Image src={require("../../Images/BerserkCover.png")} />
+                <Image
+                  onMouseOver="src,"
+                  src={require("../../Images/BerserkCover.png")}
+                />
               </Link>
             </Box>
             <Text sx={textStyle}>
