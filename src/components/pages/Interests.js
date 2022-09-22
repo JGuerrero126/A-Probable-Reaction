@@ -11,11 +11,12 @@ export default function Home() {
   };
 
   const boxStyle = {
-    bg: "gray",
+    bg: "black",
     display: "block",
     mr: "auto",
     ml: "auto",
-    w: "fit-content",
+    w: "min-content",
+
     border: "1rem groove gray",
   };
 
@@ -47,7 +48,7 @@ export default function Home() {
                 href="https://en.wikipedia.org/wiki/Berserk_(manga)"
               >
                 <Image
-                  onMouseOver="src,"
+                  h="100%"
                   src={require("../../Images/BerserkCover.png")}
                 />
               </Link>
@@ -59,7 +60,7 @@ export default function Home() {
               a website dedicated to it. You can find it{" "}
               <Link
                 color="lightblue"
-                href="https://polar-savannah-94210.herokuapp.com"
+                href="https://take-heed-struggler.vercel.app"
               >
                 Here
               </Link>{" "}
@@ -76,6 +77,7 @@ export default function Home() {
               >
                 <Image
                   w="29.5rem"
+                  h="100%"
                   src={require("../../Images/VagabondCover.png")}
                 />
               </Link>
@@ -97,6 +99,7 @@ export default function Home() {
               >
                 <Image
                   w="29.5rem"
+                  h="100%"
                   src={require("../../Images/JojoCover.jpg")}
                 />
               </Link>
@@ -116,6 +119,7 @@ export default function Home() {
               <Link isExternal href="https://www.metallica.com">
                 <Image
                   w="29.5rem"
+                  h="100%"
                   src={require("../../Images/MetallicaCover.jpg")}
                 />
               </Link>
@@ -137,6 +141,7 @@ export default function Home() {
               >
                 <Image
                   w="29.5rem"
+                  h="100%"
                   src={require("../../Images/BladeRunnerCover.jpg")}
                 />
               </Link>
@@ -158,6 +163,7 @@ export default function Home() {
               >
                 <Image
                   w="29.5rem"
+                  h="100%"
                   src={require("../../Images/EldenRingMovieCover.jpg")}
                 />
               </Link>
@@ -167,6 +173,79 @@ export default function Home() {
               of my favorite games of all time. Taking heavy inspiration from
               Berserk, Elden Ring challenges you to struggle forward despite all
               odds.
+            </Text>
+          </VStack>
+          <VStack>
+            <Center textAlign="center" className="firePunch" fontSize="3rem">
+              FIRE PUNCH
+            </Center>
+            <Box sx={boxStyle}>
+              <Link
+                isExternal
+                href="https://www.warnerbros.com/movies/blade-runner-2049"
+              >
+                <Image
+                  w="29.5rem"
+                  h="100%"
+                  src={require("../../Images/FirePunchCover.png")}
+                />
+              </Link>
+            </Box>
+            <Text sx={textStyle}>
+              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
+              masterpiece of the Cyberpunk Genre which has so much to say about
+              being human and the nature of humanity itself.
+            </Text>
+          </VStack>
+          <VStack>
+            <Center textAlign="center" className="hotline" fontSize="3rem">
+              HOTLINE
+            </Center>
+            <Center textAlign="center" className="miami" fontSize="3rem">
+              MIAMI
+            </Center>
+            <Box sx={boxStyle}>
+              <Link
+                isExternal
+                href="https://www.warnerbros.com/movies/blade-runner-2049"
+              >
+                <Image
+                  w="29.5rem"
+                  h="100%"
+                  src={require("../../Images/HotlineMiamiCover.png")}
+                />
+              </Link>
+            </Box>
+            <Text sx={textStyle}>
+              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
+              masterpiece of the Cyberpunk Genre which has so much to say about
+              being human and the nature of humanity itself.
+            </Text>
+          </VStack>
+          <VStack>
+            <Center
+              textAlign="center"
+              className="metalGearSolid"
+              fontSize="3rem"
+            >
+              METAL GEAR SOLID
+            </Center>
+            <Box sx={boxStyle}>
+              <Link
+                isExternal
+                href="https://www.warnerbros.com/movies/blade-runner-2049"
+              >
+                <Image
+                  w="29.5rem"
+                  h="100%"
+                  src={require("../../Images/MetalGearSolid4Cover.jpg")}
+                />
+              </Link>
+            </Box>
+            <Text sx={textStyle}>
+              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
+              masterpiece of the Cyberpunk Genre which has so much to say about
+              being human and the nature of humanity itself.
             </Text>
           </VStack>
         </Wrap>

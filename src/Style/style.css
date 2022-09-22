@@ -97,6 +97,29 @@
   color: gold;
 }
 
+.firePunch {
+  font-family: "Oswald", sans-serif;
+  color: #aa0000;
+  text-shadow: 0rem 0rem 0.3rem #e8de2a;
+}
+
+.hotline {
+  font-family: "Alfa Slab One", cursive;
+  color: plum;
+  text-shadow: 0.25rem 0.25rem 0rem black, 0.5rem 0.5rem 0rem orange,
+    0.75rem 0.75rem 0rem black, 1rem 1rem 0rem yellow;
+}
+
+.miami {
+  font-family: "anton", sans-serif;
+  color: cyan;
+}
+
+.metalGearSolid {
+  font-family: "Fugaz One", sans-serif;
+  color: red;
+}
+
 .workBackground {
   background-image: repeating-linear-gradient(
     lightblue,

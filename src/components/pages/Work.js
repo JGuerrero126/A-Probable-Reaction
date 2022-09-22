@@ -143,7 +143,7 @@ export default function Work() {
                 className="links"
                 isExternal
                 sx={linkStyle}
-                href="https://polar-savannah-94210.herokuapp.com"
+                href="https://take-heed-struggler.vercel.app/"
               >
                 Live Website
               </Link>
