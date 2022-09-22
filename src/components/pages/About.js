@@ -1,4 +1,4 @@
-import { Image, Center, Box, Text, Link } from "@chakra-ui/react";
+import { Image, Center, Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 export default function About() {
@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <Box zIndex="2" className="about-me" position="absolute" mt="1rem">
         <Center
-          fontFamily="Gentium Plus"
+          fontFamily="Bellefair"
           fontSize="3rem"
           transition="0.5s"
           marginTop="0.5rem"
@@ -30,7 +30,7 @@ export default function About() {
         >
           <Center m="1rem 4rem 1rem" color="white">
             <Text
-              fontFamily="Gentium Plus"
+              fontFamily="Bellefair"
               transition="0.5s"
               fontSize="150%"
               textAlign="center"

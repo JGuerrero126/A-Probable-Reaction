@@ -16,7 +16,6 @@ export default function Home() {
     mr: "auto",
     ml: "auto",
     w: "min-content",
-
     border: "1rem groove gray",
   };
 
@@ -29,7 +28,7 @@ export default function Home() {
         paddingTop="1rem"
         paddingBottom="4rem"
       >
-        <Center fontSize="4rem" mb="4rem">
+        <Center fontSize="4rem" mb="4rem" fontFamily="Bellefair">
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
@@ -192,9 +191,10 @@ export default function Home() {
               </Link>
             </Box>
             <Text sx={textStyle}>
-              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
-              masterpiece of the Cyberpunk Genre which has so much to say about
-              being human and the nature of humanity itself.
+              Utterly heartbreaking yet full of hope and love, Fire Punch talks
+              much about the ideas of suffering and life. Do we only exist to
+              suffer? What could be worth a lifetime of torment? Fire Punch
+              answers that with a single word, "Live".
             </Text>
           </VStack>
           <VStack>
@@ -217,9 +217,10 @@ export default function Home() {
               </Link>
             </Box>
             <Text sx={textStyle}>
-              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
-              masterpiece of the Cyberpunk Genre which has so much to say about
-              being human and the nature of humanity itself.
+              Hypnotic, Pulse Pounding, Thought-Provoking. Hotline Miami is all
+              of those things and more. Somehow, a video game about mercilessly
+              murdering gangsters while listening to club music became so much
+              more than that.
             </Text>
           </VStack>
           <VStack>
@@ -243,9 +244,10 @@ export default function Home() {
               </Link>
             </Box>
             <Text sx={textStyle}>
-              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
-              masterpiece of the Cyberpunk Genre which has so much to say about
-              being human and the nature of humanity itself.
+              The King of Tacital Espionage Action. The brainchild of a madman.
+              Metal Gear Solid is a series very close to my heart, full of
+              thought-provoking ideas and intense stealth as well as charm and
+              good ol' japanese quirkyness. It is certainly one of a kind.
             </Text>
           </VStack>
         </Wrap>

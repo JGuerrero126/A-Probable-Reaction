@@ -3,7 +3,7 @@ import { Text, Link, Box } from "@chakra-ui/react";
 
 export default function Contact() {
   const boxStyle = {
-    fontFamily: "Gentium Plus",
+    fontFamily: "Bellefair",
     fontSize: "3rem",
     marginTop: "1rem",
     position: "absolute",
@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   const linkStyle = {
-    fontFamily: "Gentium Plus",
+    fontFamily: "Bellefair",
     fontSize: "3rem",
     color: "green",
     textDecoration: "none",

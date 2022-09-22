@@ -6,6 +6,30 @@
   --darkgray: #3d3d3d;
 }
 
+body {
+  cursor: url("../Images/custom-mouse.png"), auto;
+}
+
+body a {
+  cursor: url("../Images/custom-mouse.png"), auto;
+  animation: cursor 0.5s linear infinite;
+}
+
+@keyframes cursor {
+  0% {
+    cursor: url("../Images/custom-mouse1.png"), auto;
+  }
+  25% {
+    cursor: url("../Images/custom-mouse2.png"), auto;
+  }
+  50% {
+    cursor: url("../Images/custom-mouse3.png"), auto;
+  }
+  75% {
+    cursor: url("../Images/custom-mouse4.png"), auto;
+  }
+}
+
 .navbar {
   border-bottom: lightblue inset 4px;
   background-color: midnightblue;
@@ -27,7 +51,7 @@
 }
 
 .navbar li a {
-  font-family: "Gentium Plus", serif;
+  font-family: "Bellefair", serif;
   text-decoration: none;
   color: snow;
 }
@@ -70,11 +94,15 @@
 .berserk {
   font-family: "anton", sans-serif;
   color: #aa0000;
+  -webkit-text-stroke-color: whitesmoke;
+  -webkit-text-stroke-width: 0.1rem;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
 }
 
 .vagabond {
   font-family: "Permanent Marker", cursive;
   color: #bac53e;
+  text-shadow: 0.4rem 0.3rem 0.2rem rgba(0, 0, 0, 0.658);
 }
 
 .jojo {
@@ -100,19 +128,29 @@
 .firePunch {
   font-family: "Oswald", sans-serif;
   color: #aa0000;
-  text-shadow: 0rem 0rem 0.3rem #e8de2a;
+  background-image: url("../Images/fireimage.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: rgba(255, 255, 0, 0.637);
+  -webkit-text-stroke-width: 0.05rem;
 }
 
 .hotline {
   font-family: "Alfa Slab One", cursive;
-  color: plum;
+  color: rgb(240, 92, 153);
+  -webkit-text-stroke-color: rgb(253, 171, 206);
+  -webkit-text-stroke-width: 0.1rem;
   text-shadow: 0.25rem 0.25rem 0rem black, 0.5rem 0.5rem 0rem orange,
-    0.75rem 0.75rem 0rem black, 1rem 1rem 0rem yellow;
+    0.75rem 0.75rem 0rem yellow;
 }
 
 .miami {
   font-family: "anton", sans-serif;
-  color: cyan;
+  color: rgb(139, 202, 245);
+  -webkit-text-stroke-color: whitesmoke;
+  -webkit-text-stroke-width: 0.05rem;
+  text-shadow: 0.25rem 0.25rem 0rem black;
 }
 
 .metalGearSolid {

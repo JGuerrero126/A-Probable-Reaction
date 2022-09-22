@@ -13,7 +13,7 @@ import {
 
 export default function Work() {
   const headingStyle = {
-    fontFamily: "Gentium Plus",
+    fontFamily: "Bellefair",
     fontSize: "3rem",
     marginBottom: "3rem",
     marginTop: "2rem",
@@ -31,12 +31,14 @@ export default function Work() {
   };
 
   const textStyle = {
+    fontFamily: "Bellefair",
     fontSize: "2rem",
     marginBottom: "1rem",
     color: "white",
   };
 
   const linkStyle = {
+    fontFamily: "Bellefair",
     color: "lightcoral",
     textDecoration: "none",
     fontSize: "140%",
@@ -56,9 +58,9 @@ export default function Work() {
         <VStack justify="center" mb="4rem">
           <Box w="75%" sx={boxStyle}>
             <Image
-              boxSize="100%"
-              // w="100%"
-              // h="35rem"
+              // boxSize="100%"
+              w="100%"
+              h="100%"
               // onMouseEnter={(e) =>
               //   (e.target.src = require("../../Images/CC.gif"))
               // }

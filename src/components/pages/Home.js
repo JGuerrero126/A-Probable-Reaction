@@ -6,7 +6,7 @@ export default function Home() {
     position: "absolute",
     zIndex: "2",
     color: "white",
-    fontFamily: "Gentium Plus",
+    fontFamily: "Bellefair",
   };
 
   return (
