@@ -22,6 +22,7 @@ export default function Home() {
           <video
             loop
             autoPlay
+            muted
             src={require("../../Images/jelly.mp4")}
             type="video/mp4"
             style={{

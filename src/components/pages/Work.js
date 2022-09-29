@@ -10,12 +10,13 @@ import {
   Spacer,
   Img,
   Heading,
+  Code,
 } from "@chakra-ui/react";
 
 export default function Work() {
   const headingStyle = {
     fontFamily: "Bellefair",
-    fontSize: "3rem",
+    fontSize: "3.5rem",
     marginBottom: "3rem",
     marginTop: "2rem",
     color: "black",
@@ -269,16 +270,60 @@ export default function Work() {
             </Box>
           </VStack>
         </Wrap>
-        <Center sx={headingStyle}>Node Packages (BRAND NEW!)</Center>
-        <VStack>
-          <Box>
-            <Heading>WARRIORS OF WRATH</Heading>
-            <Text>
-              Warriors Of Wrath is a text-based fighting game that you can
-              access anywhere using NPM.
-            </Text>
-          </Box>
-        </VStack>
+        <Center sx={headingStyle}>Node Packages</Center>
+        <Box
+          border=".25rem solid black"
+          borderRadius="0.15rem"
+          padding="0.5rem"
+          fontSize="1.25rem"
+          color="whitesmoke"
+          background="gray"
+          boxShadow="0rem 0rem 2rem inset black, 0rem 0rem 2rem black"
+          mr="5rem"
+          ml="5rem"
+        >
+          <Heading
+            fontFamily="Bellefair"
+            fontSize="2rem"
+            color="crimson"
+            textAlign="center"
+            textShadow="0.25rem 0.25rem .25rem black"
+          >
+            WARRIORS OF WRATH
+          </Heading>
+          <Text
+            fontSize="1.25rem"
+            fontFamily="Bellefair"
+            color="white"
+            textAlign="center"
+            mb="1rem"
+          >
+            Warriors Of Wrath is a text-based fighting game that you can access
+            anywhere using NPM which is the Node Package Manager. If you have
+            Node installed then you can just type
+            <Code
+              padding="0.25rem"
+              fontSize="1.25rem"
+              color="whitesmoke"
+              background="black"
+            >
+              npx warriors-of-wrath
+            </Code>
+            into your command line terminal and enjoy the game! I am still
+            updating it relatively frequently so who knows what new features
+            might appear!
+          </Text>
+          <Center>
+            <Link
+              className="links"
+              isExternal
+              sx={linkStyle}
+              href="https://boiling-mountain-75140.herokuapp.com/"
+            >
+              Link to Package on npmjs
+            </Link>
+          </Center>
+        </Box>
         <Center sx={headingStyle}>Short Films / Music Videos</Center>
         <Wrap justify="center" spacing="2rem">
           <iframe
