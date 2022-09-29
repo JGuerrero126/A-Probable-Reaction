@@ -9,6 +9,7 @@ import {
   VStack,
   Spacer,
   Img,
+  Heading,
 } from "@chakra-ui/react";
 
 export default function Work() {
@@ -268,6 +269,16 @@ export default function Work() {
             </Box>
           </VStack>
         </Wrap>
+        <Center sx={headingStyle}>Node Packages (BRAND NEW!)</Center>
+        <VStack>
+          <Box>
+            <Heading>WARRIORS OF WRATH</Heading>
+            <Text>
+              Warriors Of Wrath is a text-based fighting game that you can
+              access anywhere using NPM.
+            </Text>
+          </Box>
+        </VStack>
         <Center sx={headingStyle}>Short Films / Music Videos</Center>
         <Wrap justify="center" spacing="2rem">
           <iframe

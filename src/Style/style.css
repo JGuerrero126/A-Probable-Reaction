@@ -141,8 +141,8 @@ body a {
   color: rgb(240, 92, 153);
   -webkit-text-stroke-color: rgb(253, 171, 206);
   -webkit-text-stroke-width: 0.1rem;
-  text-shadow: 0.25rem 0.25rem 0rem black, 0.5rem 0.5rem 0rem orange,
-    0.75rem 0.75rem 0rem yellow;
+  text-shadow: 0.25rem 0.25rem 0rem black, 0.5rem 0.5rem 0rem darkorange,
+    0.75rem 0.75rem 0rem goldenrod;
 }
 
 .miami {
