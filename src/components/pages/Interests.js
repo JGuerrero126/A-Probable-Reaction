@@ -179,10 +179,7 @@ export default function Home() {
               FIRE PUNCH
             </Center>
             <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://www.warnerbros.com/movies/blade-runner-2049"
-              >
+              <Link isExternal href="https://www.viz.com/fire-punch">
                 <Image
                   w="29.5rem"
                   h="100%"
@@ -205,10 +202,7 @@ export default function Home() {
               MIAMI
             </Center>
             <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://www.warnerbros.com/movies/blade-runner-2049"
-              >
+              <Link isExternal href="https://www.hotlinemiami.com">
                 <Image
                   w="29.5rem"
                   h="100%"
@@ -232,10 +226,7 @@ export default function Home() {
               METAL GEAR SOLID
             </Center>
             <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://www.warnerbros.com/movies/blade-runner-2049"
-              >
+              <Link isExternal href="https://en.wikipedia.org/wiki/Metal_Gear">
                 <Image
                   w="29.5rem"
                   h="100%"

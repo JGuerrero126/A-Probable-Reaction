@@ -29,19 +29,19 @@ export default function Work() {
 
   const boxStyle = {
     bg: "#322413",
-    border: "0.5rem groove lightblue",
+    border: "0.5rem groove gray",
   };
 
   const textStyle = {
     fontFamily: "Bellefair",
     fontSize: "2rem",
     marginBottom: "1rem",
-    color: "white",
+    color: "black",
   };
 
   const linkStyle = {
     fontFamily: "Bellefair",
-    color: "lightcoral",
+    color: "black",
     textDecoration: "none",
     fontSize: "140%",
     transition: "0.5s",
@@ -272,29 +272,30 @@ export default function Work() {
         </Wrap>
         <Center sx={headingStyle}>Node Packages</Center>
         <Box
-          border=".25rem solid black"
-          borderRadius="0.15rem"
-          padding="0.5rem"
+          border=".25rem solid red"
+          borderRadius="2rem"
+          // padding="0.5rem"
           fontSize="1.25rem"
           color="whitesmoke"
-          background="gray"
-          boxShadow="0rem 0rem 2rem inset black, 0rem 0rem 2rem black"
+          background="#E32227"
+          // boxShadow="0rem 0rem 2rem inset black, 0rem 0rem 2rem black"
+          boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset red"
           mr="5rem"
           ml="5rem"
         >
           <Heading
             fontFamily="Bellefair"
             fontSize="2rem"
-            color="crimson"
+            color="black"
             textAlign="center"
-            textShadow="0.25rem 0.25rem .25rem black"
+            // textShadow="0.25rem 0.25rem .25rem black"
           >
             WARRIORS OF WRATH
           </Heading>
           <Text
             fontSize="1.25rem"
             fontFamily="Bellefair"
-            color="white"
+            color="black"
             textAlign="center"
             mb="1rem"
           >
@@ -305,7 +306,7 @@ export default function Work() {
               padding="0.25rem"
               fontSize="1.25rem"
               color="whitesmoke"
-              background="black"
+              // background="black"
             >
               npx warriors-of-wrath
             </Code>
@@ -326,33 +327,39 @@ export default function Work() {
         </Box>
         <Center sx={headingStyle}>Short Films / Music Videos</Center>
         <Wrap justify="center" spacing="2rem">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/fY5Pjd_FeX0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/57QIyB-ldVY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/6SVohy-mjnU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <Box boxShadow="0rem 0rem 2rem black">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/fY5Pjd_FeX0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </Box>
+          <Box boxShadow="0rem 0rem 2rem black">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/57QIyB-ldVY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </Box>
+          <Box boxShadow="0rem 0rem 2rem black">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/6SVohy-mjnU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </Box>
         </Wrap>
       </Box>
     </div>

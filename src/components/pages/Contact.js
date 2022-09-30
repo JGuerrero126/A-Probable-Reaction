@@ -100,6 +100,7 @@ export default function Contact() {
         <video
           loop
           autoPlay
+          muted
           src={require("../../Images/WateringPlant.mp4")}
           type="video/mp4"
           style={{

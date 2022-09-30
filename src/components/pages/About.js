@@ -51,11 +51,12 @@ export default function About() {
         <video
           loop
           autoPlay
+          muted
           src={require("../../Images/Sunflowers.mp4")}
           type="video/mp4"
           style={{
             height: "100vh",
-            width: "100vw",
+            width: "100%",
             objectFit: "cover",
             pointerEvents: "none",
           }}

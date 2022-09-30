@@ -161,13 +161,15 @@ body a {
 .workBackground {
   background-image: repeating-linear-gradient(
     lightblue,
-    midnightblue,
-    lightblue
+    lightcoral,
+    crimson,
+    darkred,
+    black
   );
 }
 
 .links:hover {
-  color: #ba0000;
+  color: lightskyblue;
   text-decoration: underline;
 }
 
