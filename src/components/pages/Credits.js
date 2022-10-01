@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Box
         w="100%"
-        h="100vh"
+        h="100%"
         className="creditsBackground"
         paddingTop="1rem"
         paddingBottom="4rem"
