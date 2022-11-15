@@ -53,7 +53,7 @@ export default function Home() {
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
-          <VStack>
+          <VStack maxW="85vw">
             <Center
               textAlign="center"
               className="berserk"
@@ -88,7 +88,7 @@ export default function Home() {
               </Link>{" "}
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="vagabond" fontSize="3rem">
               Vagabond
             </Center>
@@ -113,7 +113,7 @@ export default function Home() {
               your purpose in life.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="jojo" fontSize="2.5rem">
               JoJo's BIZARRE ADVENTURE
             </Center>
@@ -139,7 +139,7 @@ export default function Home() {
               and some of the most deserved beat-downs in all of fiction.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="metallica" fontSize="3rem">
               METALLICA
             </Center>
@@ -161,7 +161,7 @@ export default function Home() {
               anger and deal with the way the world is at times.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="bladeRunner" fontSize="3rem">
               BLADE RUNNER 2049
             </Center>
@@ -186,7 +186,7 @@ export default function Home() {
               being human and the nature of humanity itself.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="eldenRing" fontSize="3rem">
               Elden Ring
             </Center>
@@ -212,7 +212,7 @@ export default function Home() {
               odds.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="firePunch" fontSize="3rem">
               FIRE PUNCH
             </Center>
@@ -235,7 +235,7 @@ export default function Home() {
               answers that with a single word, "Live".
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center textAlign="center" className="hotline" fontSize="3rem">
               HOTLINE
             </Center>
@@ -261,7 +261,7 @@ export default function Home() {
               more than that.
             </Text>
           </VStack>
-          <VStack>
+          <VStack maxW="85vw">
             <Center
               textAlign="center"
               className="metalGearSolid"
