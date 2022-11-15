@@ -1,74 +1,121 @@
-import React from "react";
+import {
+  Link,
+  ListItem,
+  UnorderedList,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import React, { useEffect } from "react";
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function Header({ currentPage, handlePageChange }) {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  const navbarBg = useColorModeValue("midnightblue", "black");
+  const navbarActive = useColorModeValue("lightblue", "gray");
+  const navbarBB = useColorModeValue("lightblue inset 4px", "gray inset 4px");
+  const navbarBS = useColorModeValue(
+    "1px 1px 6px inset lightblue",
+    "1px 1px 6px inset gray"
+  );
+  const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
+  const bgMusic = useColorModeValue(
+    require("../Music/lightModeBGMusic.mp3"),
+    require("../Music/darkModeBGMusic.mp3")
+  );
+
+  const liStyle = {
+    listStyle: "none",
+    display: "inline",
+    marginRight: "3rem",
+    fontSize: "2rem",
+  };
+
+  const linkStyle = {
+    fontFamily: fontSrc,
+    textDecoration: "none",
+  };
+
   return (
-    <div>
-      <ul className="navbar">
-        <li className="">
-          <a
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-            className={currentPage === "Home" ? "active" : ""}
-          >
-            Home
-          </a>
-        </li>
-        <li className="">
-          <a
-            href="#about"
-            onClick={() => handlePageChange("About")}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === "About" ? "active" : ""}
-          >
-            About
-          </a>
-        </li>
-        <li className="">
-          <a
-            href="#interests"
-            onClick={() => handlePageChange("Interests")}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === "Interests" ? "active" : ""}
-          >
-            Interests
-          </a>
-        </li>
-        <li className="">
-          <a
-            href="#work"
-            onClick={() => handlePageChange("Work")}
-            // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === "Work" ? "active" : ""}
-          >
-            Work
-          </a>
-        </li>
-        <li className="">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
-            // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === "Contact" ? "active" : ""}
-          >
-            Contact
-          </a>
-        </li>
-        <li className="">
-          <a
-            href="#credits"
-            onClick={() => handlePageChange("Credits")}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === "Credits" ? "active" : ""}
-          >
-            Credits
-          </a>
-        </li>
-      </ul>
-    </div>
+    <UnorderedList
+      minW="100vw"
+      padding="2rem"
+      margin="0"
+      borderBottom={navbarBB}
+      bg={navbarBg}
+      boxShadow={navbarBS}
+    >
+      <ListItem sx={liStyle}>
+        <Link
+          href="#home"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Home")}
+          color={currentPage === "Home" ? navbarActive : "snow"}
+        >
+          Home
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          href="#about"
+          sx={linkStyle}
+          onClick={() => handlePageChange("About")}
+          color={currentPage === "About" ? navbarActive : "snow"}
+        >
+          About
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          href="#interests"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Interests")}
+          color={currentPage === "Interests" ? navbarActive : "snow"}
+        >
+          Interests
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          href="#work"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Work")}
+          color={currentPage === "Work" ? navbarActive : "snow"}
+        >
+          Work
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          href="#contact"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Contact")}
+          color={currentPage === "Contact" ? navbarActive : "snow"}
+        >
+          Contact
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          href="#credits"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Credits")}
+          color={currentPage === "Credits" ? navbarActive : "snow"}
+        >
+          Credits
+        </Link>
+      </ListItem>
+      <ListItem sx={liStyle}>
+        <Link
+          onClick={toggleColorMode}
+          sx={linkStyle}
+          color={colorMode === "light" ? "snow" : "crimson"}
+          _hover={{ textDecoration: "none" }}
+        >
+          ?
+        </Link>
+      </ListItem>
+      <audio autoPlay loop src={bgMusic}></audio>
+    </UnorderedList>
   );
 }
 

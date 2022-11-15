@@ -1,10 +1,15 @@
-import { Box, Text, Link } from "@chakra-ui/react";
+import { Box, Text, Link, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 export default function Home() {
+  const creditsBg = useColorModeValue(
+    "linear-gradient(lightblue, whitesmoke)",
+    "linear-gradient(lightgray, gray, black, black)"
+  );
+  const fontSrc = useColorModeValue("Gentium Plus", "Syne Mono");
+
   const centerStyle = {
-    color: "black",
-    fontFamily: "Gentium Plus",
+    fontFamily: fontSrc,
     fontSize: "2rem",
     marginTop: "3rem",
     textAlign: "center",
@@ -12,14 +17,14 @@ export default function Home() {
 
   return (
     <div>
-      <Box
-        w="100%"
-        h="100%"
-        className="creditsBackground"
-        paddingTop="1rem"
-        paddingBottom="4rem"
-      >
-        <Text fontSize="3rem" marginTop="3rem" ml="1rem" textAlign="center">
+      <Box w="100vw" h="100vh" bg={creditsBg}>
+        <Text
+          fontSize="3rem"
+          fontFamily={fontSrc}
+          paddingTop="3rem"
+          ml="1rem"
+          textAlign="center"
+        >
           {" "}
           Background Video Credits
         </Text>
@@ -53,7 +58,13 @@ export default function Home() {
             coverr
           </Link>
         </Text>
-        <Text fontSize="3rem" marginTop="4rem" ml="1rem" textAlign="center">
+        <Text
+          fontSize="3rem"
+          marginTop="4rem"
+          ml="1rem"
+          fontFamily={fontSrc}
+          textAlign="center"
+        >
           {" "}
           Interests Images Credits
         </Text>
@@ -102,6 +113,17 @@ export default function Home() {
             Hyam Cacerez
           </Link>
         </Text>
+        <Text
+          fontSize="3rem"
+          marginTop="4rem"
+          ml="1rem"
+          fontFamily={fontSrc}
+          textAlign="center"
+        >
+          {" "}
+          Background Music Credits
+        </Text>
+        <Text sx={centerStyle}>"Light" & "Dark" by Jerry Guerrero</Text>
       </Box>
     </div>
   );

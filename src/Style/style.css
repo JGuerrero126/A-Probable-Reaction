@@ -6,14 +6,14 @@
   --darkgray: #3d3d3d;
 }
 
-body {
+/* body {
   cursor: url("../Images/custom-mouse.png"), auto;
-}
+} */
 
-body a {
+/* body a {
   cursor: url("../Images/custom-mouse.png"), auto;
   animation: cursor 0.5s linear infinite;
-}
+} */
 
 @keyframes cursor {
   0% {
@@ -28,32 +28,9 @@ body a {
   75% {
     cursor: url("../Images/custom-mouse4.png"), auto;
   }
-}
-
-.navbar {
-  border-bottom: lightblue inset 4px;
-  background-color: midnightblue;
-  padding: 2rem;
-  margin: 0;
-  box-shadow: 1px 1px 6px inset lightblue;
-}
-
-.navbar .active {
-  color: lightblue;
-  text-shadow: black 0.2rem 0.2rem;
-}
-
-.navbar li {
-  list-style: none;
-  display: inline;
-  margin-right: 3rem;
-  font-size: 2rem;
-}
-
-.navbar li a {
-  font-family: "Bellefair", serif;
-  text-decoration: none;
-  color: snow;
+  100% {
+    cursor: url("../Images/custom-mouse4.png"), auto;
+  }
 }
 
 .footer {
@@ -69,26 +46,7 @@ body a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1rem groove #fba914;
   transition: 0.5s;
-}
-
-.about-me img:hover {
-  box-shadow: 0.1rem 0.1rem 4rem #e8de2a;
-}
-
-.about-me a {
-  color: whitesmoke;
-  text-decoration: none;
-  transition: 1s;
-}
-
-.about-me p:hover a {
-  color: #bac53e;
-}
-
-.interestsBackground {
-  background-image: linear-gradient(lightblue, midnightblue, purple, #aa0000);
 }
 
 .berserk {
@@ -156,42 +114,6 @@ body a {
 .metalGearSolid {
   font-family: "Fugaz One", sans-serif;
   color: red;
-}
-
-.workBackground {
-  background-image: repeating-linear-gradient(
-    lightblue,
-    lightcoral,
-    crimson,
-    darkred,
-    black
-  );
-}
-
-.links:hover {
-  color: lightskyblue;
-  text-decoration: underline;
-}
-
-.contactLinks {
-  font-family: "Noto Serif JP", serif;
-}
-
-.contactLinks:hover {
-  color: greenyellow;
-  text-decoration: underline;
-  font-size: 115%;
-}
-
-.contact-me ul li {
-  font-size: 200%;
-  margin-left: 100px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.creditsBackground {
-  background-image: linear-gradient(lightblue, whitesmoke);
 }
 
 @media screen and (max-width: 768px) {

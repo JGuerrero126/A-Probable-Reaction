@@ -1,9 +1,35 @@
 import React from "react";
-import { Text, Link, Box } from "@chakra-ui/react";
+import {
+  Text,
+  Link,
+  Box,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 export default function Contact() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
+  const videoSrc = useColorModeValue(
+    require("../../Images/WateringPlant.mp4"),
+    require("../../Images/flowerInRain.mp4")
+  );
+  const textColor = useColorModeValue("green", "crimson");
+  const linkHover = useColorModeValue(
+    {
+      color: "greenyellow",
+      textDecoration: "underline",
+      fontSize: "115%",
+    },
+    {
+      color: "red",
+      textDecoration: "underline",
+      fontSize: "115%",
+    }
+  );
+
   const boxStyle = {
-    fontFamily: "Bellefair",
+    fontFamily: fontSrc,
     fontSize: "3rem",
     marginTop: "1rem",
     position: "absolute",
@@ -13,11 +39,12 @@ export default function Contact() {
   };
 
   const linkStyle = {
-    fontFamily: "Bellefair",
+    fontFamily: fontSrc,
     fontSize: "3rem",
-    color: "green",
+    color: textColor,
     textDecoration: "none",
     transition: "0.5s",
+    _hover: linkHover,
   };
 
   const textStyle = {
@@ -101,14 +128,24 @@ export default function Contact() {
           loop
           autoPlay
           muted
-          src={require("../../Images/WateringPlant.mp4")}
+          src={videoSrc}
           type="video/mp4"
-          style={{
-            height: "100vh",
-            width: "100%",
-            objectFit: "cover",
-            pointerEvents: "none",
-          }}
+          style={
+            colorMode === "light"
+              ? {
+                  minWidth: "100vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  pointerEvents: "none",
+                }
+              : {
+                  minWidth: "100vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  pointerEvents: "none",
+                  filter: "saturate(0)",
+                }
+          }
         ></video>
       </Box>
     </div>

@@ -1,10 +1,31 @@
-import { Box, Text, Center, Image, Wrap, VStack, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Center,
+  Image,
+  Wrap,
+  VStack,
+  Link,
+  useColorModeValue,
+  useColorMode,
+} from "@chakra-ui/react";
 import React from "react";
+import berserkCover from "../../Images/BerserkCover.png";
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const interestsBg = useColorModeValue(
+    "linear-gradient(lightblue, midnightblue, purple, #aa0000)",
+    "linear-gradient(gray, black,black, #3d3d3d, black,black, #ba0000)"
+  );
+  const interestsBorder = useColorModeValue(
+    "1rem groove gray",
+    "1rem solid white"
+  );
+  const fontSrc = useColorModeValue("Gentium Plus", "Syne Mono");
   const textStyle = {
     color: "white",
-    fontFamily: "Gentium Plus",
+    fontFamily: fontSrc,
     fontSize: "1.5rem",
     textAlign: "center",
     maxWidth: "fit-content",
@@ -15,20 +36,20 @@ export default function Home() {
     display: "block",
     mr: "auto",
     ml: "auto",
-    w: "min-content",
-    border: "1rem groove gray",
+    w: "max-content",
+    border: interestsBorder,
   };
 
   return (
     <div>
       <Box
-        w="100%"
+        w="100vw"
         h="100%"
-        className="interestsBackground"
+        backgroundImage={interestsBg}
         paddingTop="1rem"
         paddingBottom="4rem"
       >
-        <Center fontSize="4rem" mb="4rem" fontFamily="Bellefair">
+        <Center fontSize="4rem" mb="4rem" fontFamily={fontSrc}>
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
@@ -47,8 +68,10 @@ export default function Home() {
                 href="https://en.wikipedia.org/wiki/Berserk_(manga)"
               >
                 <Image
-                  h="100%"
-                  src={require("../../Images/BerserkCover.png")}
+                  src={berserkCover}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -78,6 +101,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/VagabondCover.png")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -100,6 +126,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/JojoCover.jpg")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -120,6 +149,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/MetallicaCover.jpg")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -142,6 +174,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/BladeRunnerCover.jpg")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -164,6 +199,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/EldenRingMovieCover.jpg")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -184,6 +222,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/FirePunchCover.png")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -207,6 +248,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/HotlineMiamiCover.png")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>
@@ -231,6 +275,9 @@ export default function Home() {
                   w="29.5rem"
                   h="100%"
                   src={require("../../Images/MetalGearSolid4Cover.jpg")}
+                  filter={
+                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                  }
                 />
               </Link>
             </Box>

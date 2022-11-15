@@ -1,36 +1,60 @@
-import { Image, Center, Box, Text } from "@chakra-ui/react";
+import {
+  Image,
+  Center,
+  Box,
+  Text,
+  useColorModeValue,
+  useColorMode,
+} from "@chakra-ui/react";
 import React from "react";
 
 export default function About() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const textColor = useColorModeValue("white", "bone");
+  const videoSrc = useColorModeValue(
+    require("../../Images/Sunflowers.mp4"),
+    require("../../Images/forest.mp4")
+  );
+  const imgSrc = useColorModeValue(
+    require("../../Images/avatar.png"),
+    require("../../Images/darkModePortrait.jpg")
+  );
+  const boxBg = useColorModeValue("#322413", "");
+  const boxBorder = useColorModeValue("0.5rem groove #7B8235", "");
+  const imgBorder = useColorModeValue(
+    "1rem groove #fba914",
+    "1rem solid lightgray"
+  );
+  const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
+  const imgHover = useColorModeValue("0.1rem 0.1rem 4rem #e8de2a", "");
+  const imgStyle = useColorModeValue(
+    { width: "25rem", height: "25rem", marginBottom: "1rem" },
+    { width: "25rem", height: "33rem", marginBottom: "1rem" }
+  );
+
   return (
     <div>
       <Box zIndex="2" className="about-me" position="absolute" mt="1rem">
         <Center
-          fontFamily="Bellefair"
+          fontFamily={fontSrc}
           fontSize="3rem"
           transition="0.5s"
           marginTop="0.5rem"
           marginBottom="3rem"
-          color="white"
+          color={textColor}
         >
           About Me
         </Center>
         <Image
-          w="25rem"
-          h="25rem"
-          mb="1rem"
-          src={require("../../Images/avatar.png")}
+          border={imgBorder}
+          sx={imgStyle}
+          src={imgSrc}
+          _hover={{ boxShadow: imgHover }}
         />
-        <Box
-          bg="#322413"
-          border="0.5rem groove #7B8235"
-          w="90%"
-          ml="auto"
-          mr="auto"
-        >
-          <Center m="1rem 4rem 1rem" color="white">
+        <Box bg={boxBg} border={boxBorder} w="90%" ml="auto" mr="auto">
+          <Center m="1rem 4rem 1rem" color={textColor}>
             <Text
-              fontFamily="Bellefair"
+              fontFamily={fontSrc}
               transition="0.5s"
               fontSize="150%"
               textAlign="center"
@@ -52,14 +76,24 @@ export default function About() {
           loop
           autoPlay
           muted
-          src={require("../../Images/Sunflowers.mp4")}
+          src={videoSrc}
           type="video/mp4"
-          style={{
-            height: "100vh",
-            width: "100%",
-            objectFit: "cover",
-            pointerEvents: "none",
-          }}
+          style={
+            colorMode === "light"
+              ? {
+                  minWidth: "100vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  pointerEvents: "none",
+                }
+              : {
+                  minWidth: "100vw",
+                  height: "100vh",
+                  objectFit: "cover",
+                  pointerEvents: "none",
+                  filter: "saturate(0)",
+                }
+          }
         ></video>
       </Box>
     </div>

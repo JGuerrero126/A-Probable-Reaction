@@ -11,48 +11,74 @@ import {
   Img,
   Heading,
   Code,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function Work() {
+  const workBg = useColorModeValue(
+    "linear-gradient( lightblue, lightcoral, crimson, darkred, black);",
+    "linear-gradient(gray, black,black,black, #ba0000)"
+  );
+  const textColor = useColorModeValue("black", "white");
+  const linkHover = useColorModeValue("lightskyblue", "crimson");
+  const npmHover = useColorModeValue("lightskyblue", "black");
+  const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
+  const boxBorder = useColorModeValue(
+    "0.5rem groove gray",
+    "0.5rem solid white"
+  );
+  const boxBottom = useColorModeValue("0.5rem groove gray", "3rem solid white");
+  const imgFilter = useColorModeValue("", "saturate(0) contrast(105%)");
+
   const headingStyle = {
-    fontFamily: "Bellefair",
+    fontFamily: fontSrc,
     fontSize: "3.5rem",
     marginBottom: "3rem",
     marginTop: "2rem",
-    color: "black",
   };
 
   const imageStyle = {
     boxSize: ["10rem", "20rem"],
     objectFit: "cover",
+    filter: imgFilter,
   };
 
   const boxStyle = {
     bg: "#322413",
-    border: "0.5rem groove gray",
+    border: boxBorder,
+    borderBottom: boxBottom,
+    filter: imgFilter,
   };
 
   const textStyle = {
-    fontFamily: "Bellefair",
+    fontFamily: fontSrc,
     fontSize: "2rem",
     marginBottom: "1rem",
-    color: "black",
+    color: textColor,
   };
 
   const linkStyle = {
-    fontFamily: "Bellefair",
-    color: "black",
+    fontFamily: fontSrc,
     textDecoration: "none",
     fontSize: "140%",
     transition: "0.5s",
+    _hover: { color: linkHover, textDecoration: "underline" },
+  };
+
+  const npmStyle = {
+    fontFamily: fontSrc,
+    textDecoration: "none",
+    fontSize: "140%",
+    transition: "0.5s",
+    _hover: { color: npmHover, textDecoration: "underline" },
   };
 
   return (
     <div>
       <Box
-        w="100%"
+        w="100vw"
         h="100%"
-        className="workBackground"
+        bg={workBg}
         paddingTop="1rem"
         paddingBottom="2rem"
       >
@@ -60,7 +86,6 @@ export default function Work() {
         <VStack justify="center" mb="4rem">
           <Box w="75%" sx={boxStyle}>
             <Image
-              // boxSize="100%"
               w="100%"
               h="100%"
               // onMouseEnter={(e) =>
@@ -76,7 +101,6 @@ export default function Work() {
             <Text sx={textStyle}>Collection Conquest</Text>
             <Text sx={textStyle}>MERN Stack</Text>
             <Link
-              className="links"
               isExternal
               sx={linkStyle}
               href="https://github.com/zionremnant/collection-conquest"
@@ -85,7 +109,6 @@ export default function Work() {
             </Link>
             <Spacer />
             <Link
-              className="links"
               isExternal
               sx={linkStyle}
               href="https://dry-island-54181.herokuapp.com/"
@@ -106,7 +129,6 @@ export default function Work() {
               <Text sx={textStyle}>The Sorrow Work</Text>
               <Text sx={textStyle}>MERN Stack</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/JGuerrero126/Sorrow_Work"
@@ -115,7 +137,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://cryptic-coast-35240.herokuapp.com"
@@ -135,7 +156,6 @@ export default function Work() {
               <Text sx={textStyle}>Take Heed Struggler!</Text>
               <Text sx={textStyle}>React</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/JGuerrero126/Berserk-Site"
@@ -144,7 +164,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://take-heed-struggler.vercel.app/"
@@ -164,7 +183,6 @@ export default function Work() {
               <Text sx={textStyle}>All Your Music Needs</Text>
               <Text sx={textStyle}> HTML/CSS/JS</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/JGuerrero126/All-Your-Music-Needs"
@@ -173,7 +191,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://jguerrero126.github.io/All-Your-Music-Needs/"
@@ -193,7 +210,6 @@ export default function Work() {
               <Text sx={textStyle}>The Recipe Box</Text>
               <Text sx={textStyle}> Full Stack</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/EthanP94/The-Recipe-Box"
@@ -202,7 +218,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://immense-cliffs-14605.herokuapp.com/"
@@ -222,7 +237,6 @@ export default function Work() {
               <Text sx={textStyle}>Weather Dashboard</Text>
               <Text sx={textStyle}>HTML/CSS/JS/API</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/JGuerrero126/Weather-Dashboard"
@@ -231,7 +245,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://jguerrero126.github.io/Weather-Dashboard/"
@@ -251,7 +264,6 @@ export default function Work() {
               <Text sx={textStyle}>The Cyber Zone</Text>
               <Text sx={textStyle}>Full Stack Blog</Text>
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://github.com/JGuerrero126/The_CYBER_Zone"
@@ -260,7 +272,6 @@ export default function Work() {
               </Link>
               <Spacer />
               <Link
-                className="links"
                 isExternal
                 sx={linkStyle}
                 href="https://boiling-mountain-75140.herokuapp.com/"
@@ -274,27 +285,24 @@ export default function Work() {
         <Box
           border=".25rem solid red"
           borderRadius="2rem"
-          // padding="0.5rem"
           fontSize="1.25rem"
           color="whitesmoke"
           background="#E32227"
-          // boxShadow="0rem 0rem 2rem inset black, 0rem 0rem 2rem black"
           boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset red"
           mr="5rem"
           ml="5rem"
         >
           <Heading
-            fontFamily="Bellefair"
+            fontFamily={fontSrc}
             fontSize="2rem"
             color="black"
             textAlign="center"
-            // textShadow="0.25rem 0.25rem .25rem black"
           >
             WARRIORS OF WRATH
           </Heading>
           <Text
             fontSize="1.25rem"
-            fontFamily="Bellefair"
+            fontFamily={fontSrc}
             color="black"
             textAlign="center"
             mb="1rem"
@@ -302,12 +310,7 @@ export default function Work() {
             Warriors Of Wrath is a text-based fighting game that you can access
             anywhere using NPM which is the Node Package Manager. If you have
             Node installed then you can just type
-            <Code
-              padding="0.25rem"
-              fontSize="1.25rem"
-              color="whitesmoke"
-              // background="black"
-            >
+            <Code padding="0.25rem" fontSize="1.25rem" color="whitesmoke">
               npx warriors-of-wrath
             </Code>
             into your command line terminal and enjoy the game! I am still
@@ -316,9 +319,8 @@ export default function Work() {
           </Text>
           <Center>
             <Link
-              className="links"
               isExternal
-              sx={linkStyle}
+              sx={npmStyle}
               href="https://boiling-mountain-75140.herokuapp.com/"
             >
               Link to Package on npmjs
