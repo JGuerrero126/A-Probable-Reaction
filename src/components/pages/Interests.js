@@ -23,6 +23,8 @@ export default function Home() {
     "1rem solid white"
   );
   const fontSrc = useColorModeValue("Gentium Plus", "Syne Mono");
+  const linkColor = useColorModeValue("lightblue", "crimson");
+
   const textStyle = {
     color: "white",
     fontFamily: fontSrc,
@@ -38,6 +40,7 @@ export default function Home() {
     ml: "auto",
     w: "max-content",
     border: interestsBorder,
+    maxWidth: "90vw",
   };
 
   return (
@@ -49,7 +52,7 @@ export default function Home() {
         paddingTop="1rem"
         paddingBottom="4rem"
       >
-        <Center fontSize="4rem" mb="4rem" fontFamily={fontSrc}>
+        <Center fontSize={["10vw", "4rem"]} mb="4rem" fontFamily={fontSrc}>
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
@@ -81,7 +84,7 @@ export default function Home() {
               I have ever experienced. In fact, it affected me so much I created
               a website dedicated to it. You can find it{" "}
               <Link
-                color="lightblue"
+                color={linkColor}
                 href="https://take-heed-struggler.vercel.app"
               >
                 Here
@@ -282,7 +285,7 @@ export default function Home() {
               </Link>
             </Box>
             <Text sx={textStyle}>
-              The King of Tacital Espionage Action. The brainchild of a madman.
+              The King of Tactical Espionage Action. The brainchild of a madman.
               Metal Gear Solid is a series very close to my heart, full of
               thought-provoking ideas and intense stealth as well as charm and
               good ol' japanese quirkyness. It is certainly one of a kind.

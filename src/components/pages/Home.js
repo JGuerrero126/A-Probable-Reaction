@@ -18,10 +18,20 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Text sx={centerStyle} fontSize="4rem" ml="1rem" marginTop="21rem">
+        <Text
+          sx={centerStyle}
+          fontSize={["10vw", "4rem"]}
+          ml="1rem"
+          marginTop="21rem"
+        >
           Jerry Guerrero
         </Text>
-        <Text sx={centerStyle} fontSize="3rem" ml="1rem" marginTop="25rem">
+        <Text
+          sx={centerStyle}
+          fontSize={["10vw", "4rem"]}
+          ml="1rem"
+          marginTop="25rem"
+        >
           Developer, Creator, Author
         </Text>
         <Box filter="auto" blur="2px" position="relative">

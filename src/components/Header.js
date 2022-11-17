@@ -1,9 +1,10 @@
 import {
   Link,
-  ListItem,
   UnorderedList,
   useColorMode,
   useColorModeValue,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 
@@ -36,86 +37,76 @@ function Header({ currentPage, handlePageChange }) {
   };
 
   return (
-    <UnorderedList
+    <Wrap
       minW="100vw"
       padding="2rem"
-      margin="0"
+      justify="left"
       borderBottom={navbarBB}
       bg={navbarBg}
       boxShadow={navbarBS}
     >
-      <ListItem sx={liStyle}>
-        <Link
-          href="#home"
-          sx={linkStyle}
-          onClick={() => handlePageChange("Home")}
-          color={currentPage === "Home" ? navbarActive : "snow"}
-        >
-          Home
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          href="#about"
-          sx={linkStyle}
-          onClick={() => handlePageChange("About")}
-          color={currentPage === "About" ? navbarActive : "snow"}
-        >
-          About
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          href="#interests"
-          sx={linkStyle}
-          onClick={() => handlePageChange("Interests")}
-          color={currentPage === "Interests" ? navbarActive : "snow"}
-        >
-          Interests
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          href="#work"
-          sx={linkStyle}
-          onClick={() => handlePageChange("Work")}
-          color={currentPage === "Work" ? navbarActive : "snow"}
-        >
-          Work
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          href="#contact"
-          sx={linkStyle}
-          onClick={() => handlePageChange("Contact")}
-          color={currentPage === "Contact" ? navbarActive : "snow"}
-        >
-          Contact
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          href="#credits"
-          sx={linkStyle}
-          onClick={() => handlePageChange("Credits")}
-          color={currentPage === "Credits" ? navbarActive : "snow"}
-        >
-          Credits
-        </Link>
-      </ListItem>
-      <ListItem sx={liStyle}>
-        <Link
-          onClick={toggleColorMode}
-          sx={linkStyle}
-          color={colorMode === "light" ? "snow" : "crimson"}
-          _hover={{ textDecoration: "none" }}
-        >
-          ?
-        </Link>
-      </ListItem>
+      <Link
+        href="#home"
+        sx={linkStyle}
+        onClick={() => handlePageChange("Home")}
+        color={currentPage === "Home" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>Home </WrapItem>
+      </Link>
+      <Link
+        href="#about"
+        sx={linkStyle}
+        onClick={() => handlePageChange("About")}
+        color={currentPage === "About" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>About</WrapItem>
+      </Link>
+
+      <Link
+        href="#interests"
+        sx={linkStyle}
+        onClick={() => handlePageChange("Interests")}
+        color={currentPage === "Interests" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>Interests</WrapItem>
+      </Link>
+      <Link
+        href="#work"
+        sx={linkStyle}
+        onClick={() => handlePageChange("Work")}
+        color={currentPage === "Work" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>Work</WrapItem>
+      </Link>
+      <Link
+        href="#contact"
+        sx={linkStyle}
+        onClick={() => handlePageChange("Contact")}
+        color={currentPage === "Contact" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>Contact</WrapItem>
+      </Link>
+
+      <Link
+        href="#credits"
+        sx={linkStyle}
+        onClick={() => handlePageChange("Credits")}
+        color={currentPage === "Credits" ? navbarActive : "snow"}
+      >
+        <WrapItem sx={liStyle}>Credits</WrapItem>
+      </Link>
+
+      <Link
+        onClick={toggleColorMode}
+        sx={linkStyle}
+        color={colorMode === "light" ? "snow" : "crimson"}
+        _hover={{ textDecoration: "none" }}
+      >
+        <WrapItem sx={liStyle}>?</WrapItem>
+      </Link>
+
       <audio autoPlay loop src={bgMusic}></audio>
-    </UnorderedList>
+    </Wrap>
   );
 }
 

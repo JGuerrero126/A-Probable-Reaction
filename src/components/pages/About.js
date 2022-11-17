@@ -28,7 +28,13 @@ export default function About() {
   const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
   const imgHover = useColorModeValue("0.1rem 0.1rem 4rem #e8de2a", "");
   const imgStyle = useColorModeValue(
-    { width: "25rem", height: "25rem", marginBottom: "1rem" },
+    {
+      width: "25rem",
+      height: "25rem",
+      marginBottom: "1rem",
+      maxHeight: "90vh",
+      maxWidth: "90vw",
+    },
     { width: "25rem", height: "33rem", marginBottom: "1rem" }
   );
 
@@ -56,7 +62,7 @@ export default function About() {
             <Text
               fontFamily={fontSrc}
               transition="0.5s"
-              fontSize="150%"
+              fontSize="3vw"
               textAlign="center"
             >
               I am a Full Stack Web Developer with experience in both team-based
@@ -82,7 +88,7 @@ export default function About() {
             colorMode === "light"
               ? {
                   minWidth: "100vw",
-                  height: "100vh",
+                  minHeight: "100vh",
                   objectFit: "cover",
                   pointerEvents: "none",
                 }

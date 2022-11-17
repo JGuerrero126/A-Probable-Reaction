@@ -32,7 +32,7 @@ export default function Work() {
 
   const headingStyle = {
     fontFamily: fontSrc,
-    fontSize: "3.5rem",
+    fontSize: ["10vw", "3.5rem"],
     marginBottom: "3rem",
     marginTop: "2rem",
   };
@@ -285,7 +285,7 @@ export default function Work() {
         <Box
           border=".25rem solid red"
           borderRadius="2rem"
-          fontSize="1.25rem"
+          fontSize={["3vw", "1.25rem"]}
           color="whitesmoke"
           background="#E32227"
           boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset red"
@@ -294,14 +294,14 @@ export default function Work() {
         >
           <Heading
             fontFamily={fontSrc}
-            fontSize="2rem"
+            fontSize={["5vw", "2rem"]}
             color="black"
             textAlign="center"
           >
             WARRIORS OF WRATH
           </Heading>
           <Text
-            fontSize="1.25rem"
+            fontSize={["3vw", "1.25rem"]}
             fontFamily={fontSrc}
             color="black"
             textAlign="center"
@@ -310,7 +310,11 @@ export default function Work() {
             Warriors Of Wrath is a text-based fighting game that you can access
             anywhere using NPM which is the Node Package Manager. If you have
             Node installed then you can just type
-            <Code padding="0.25rem" fontSize="1.25rem" color="whitesmoke">
+            <Code
+              padding="0.25rem"
+              fontSize={["3vw", "1.25rem"]}
+              color="whitesmoke"
+            >
               npx warriors-of-wrath
             </Code>
             into your command line terminal and enjoy the game! I am still
@@ -327,12 +331,16 @@ export default function Work() {
             </Link>
           </Center>
         </Box>
-        <Center sx={headingStyle}>Short Films / Music Videos</Center>
+        <Center sx={headingStyle}>Short Films</Center>
         <Wrap justify="center" spacing="2rem">
-          <Box boxShadow="0rem 0rem 2rem black">
+          <Box
+            boxShadow="0rem 0rem 2rem black"
+            width={["90vw", "560px"]}
+            height={["13rem", "315px"]}
+          >
             <iframe
-              width="560"
-              height="315"
+              width="100%"
+              height="100%"
               src="https://www.youtube-nocookie.com/embed/fY5Pjd_FeX0"
               title="YouTube video player"
               frameborder="0"
@@ -340,10 +348,14 @@ export default function Work() {
               allowfullscreen
             ></iframe>
           </Box>
-          <Box boxShadow="0rem 0rem 2rem black">
+          <Box
+            boxShadow="0rem 0rem 2rem black"
+            width={["90vw", "560px"]}
+            height={["13rem", "315px"]}
+          >
             <iframe
-              width="560"
-              height="315"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/57QIyB-ldVY"
               title="YouTube video player"
               frameborder="0"
@@ -351,10 +363,14 @@ export default function Work() {
               allowfullscreen
             ></iframe>
           </Box>
-          <Box boxShadow="0rem 0rem 2rem black">
+          <Box
+            boxShadow="0rem 0rem 2rem black"
+            width={["90vw", "560px"]}
+            height={["13rem", "315px"]}
+          >
             <iframe
-              width="560"
-              height="315"
+              width="100%"
+              height="100%"
               src="https://www.youtube-nocookie.com/embed/6SVohy-mjnU"
               title="YouTube video player"
               frameborder="0"
