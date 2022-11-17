@@ -10,16 +10,16 @@ export default function Home() {
 
   const centerStyle = {
     fontFamily: fontSrc,
-    fontSize: "2rem",
+    fontSize: ["5vw", "2rem"],
     marginTop: "3rem",
     textAlign: "center",
   };
 
   return (
     <div>
-      <Box w="100vw" h="100vh" bg={creditsBg}>
+      <Box paddingBottom="3rem" w="100vw" h={["100%", "100vh"]} bg={creditsBg}>
         <Text
-          fontSize="3rem"
+          fontSize={["10vw", "3rem"]}
           fontFamily={fontSrc}
           paddingTop="3rem"
           ml="1rem"
@@ -59,7 +59,7 @@ export default function Home() {
           </Link>
         </Text>
         <Text
-          fontSize="3rem"
+          fontSize={["10vw", "3rem"]}
           marginTop="4rem"
           ml="1rem"
           fontFamily={fontSrc}
@@ -114,7 +114,7 @@ export default function Home() {
           </Link>
         </Text>
         <Text
-          fontSize="3rem"
+          fontSize={["10vw", "3rem"]}
           marginTop="4rem"
           ml="1rem"
           fontFamily={fontSrc}

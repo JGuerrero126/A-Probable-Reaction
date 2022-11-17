@@ -32,10 +32,16 @@ export default function About() {
       width: "25rem",
       height: "25rem",
       marginBottom: "1rem",
-      maxHeight: "90vh",
-      maxWidth: "90vw",
+      maxHeight: "70vw",
+      maxWidth: "70vw",
     },
-    { width: "25rem", height: "33rem", marginBottom: "1rem" }
+    {
+      width: "25rem",
+      height: "25rem",
+      marginBottom: "1rem",
+      maxHeight: "70vw",
+      maxWidth: "70vw",
+    }
   );
 
   return (
@@ -58,7 +64,7 @@ export default function About() {
           _hover={{ boxShadow: imgHover }}
         />
         <Box bg={boxBg} border={boxBorder} w="90%" ml="auto" mr="auto">
-          <Center m="1rem 4rem 1rem" color={textColor}>
+          <Center m="1rem 2rem 1rem" color={textColor}>
             <Text
               fontFamily={fontSrc}
               transition="0.5s"

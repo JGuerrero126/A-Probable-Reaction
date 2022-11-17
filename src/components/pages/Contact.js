@@ -30,7 +30,7 @@ export default function Contact() {
 
   const boxStyle = {
     fontFamily: fontSrc,
-    fontSize: "3rem",
+    fontSize: ["10vw", "3rem"],
     marginTop: "1rem",
     position: "absolute",
     zIndex: "2",
@@ -40,7 +40,7 @@ export default function Contact() {
 
   const linkStyle = {
     fontFamily: fontSrc,
-    fontSize: "3rem",
+    fontSize: ["10vw", "3rem"],
     color: textColor,
     textDecoration: "none",
     transition: "0.5s",
