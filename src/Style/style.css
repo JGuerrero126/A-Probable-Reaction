@@ -20,7 +20,7 @@
   animation: cursor 0.5s linear infinite;
 } */
 
-@keyframes cursor {
+/* @keyframes cursor {
   0% {
     cursor: url("../Images/custom-mouse1.png"), auto;
   }
@@ -36,7 +36,7 @@
   100% {
     cursor: url("../Images/custom-mouse4.png"), auto;
   }
-}
+} */
 
 .footer {
   font-size: smaller;

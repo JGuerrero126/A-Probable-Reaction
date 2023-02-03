@@ -1,4 +1,5 @@
 import {
+  Icon,
   Link,
   UnorderedList,
   useColorMode,
@@ -6,7 +7,8 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { AiFillSound } from "react-icons/ai";
 
 function Header({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -35,6 +37,22 @@ function Header({ currentPage, handlePageChange }) {
     fontFamily: fontSrc,
     textDecoration: "none",
   };
+
+  var bg = document.getElementById("bgAudio");
+  const [audio, setAudio] = useState("Paused");
+  function changeAudio() {
+    if (audio === "Playing") {
+      console.log(bg);
+      console.log(audio);
+      bg.pause();
+      setAudio("Paused");
+    } else {
+      console.log(bg);
+      bg.play();
+      console.log(audio);
+      setAudio("Playing");
+    }
+  }
 
   return (
     <Wrap
@@ -104,8 +122,15 @@ function Header({ currentPage, handlePageChange }) {
       >
         <WrapItem sx={liStyle}>?</WrapItem>
       </Link>
-
-      <audio autoPlay loop src={bgMusic}></audio>
+      <audio id="bgAudio" loop src={bgMusic}></audio>
+      <Icon
+        // onClick={toggleColorMode}
+        sx={linkStyle}
+        color={currentPage === "Contact" ? navbarActive : "snow"}
+        _hover={{ textDecoration: "none" }}
+        as={AiFillSound}
+        onClick={() => changeAudio()}
+      />
     </Wrap>
   );
 }

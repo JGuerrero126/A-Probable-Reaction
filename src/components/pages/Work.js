@@ -281,7 +281,7 @@ export default function Work() {
             </Box>
           </VStack>
         </Wrap>
-        <Center sx={headingStyle}>Node Packages</Center>
+        <Center sx={headingStyle}>Video Games</Center>
         <Box
           border=".25rem solid red"
           borderRadius="2rem"
@@ -310,11 +310,7 @@ export default function Work() {
             Warriors Of Wrath is a text-based fighting game that you can access
             anywhere using NPM which is the Node Package Manager. If you have
             Node installed then you can just type
-            <Code
-              padding="0.25rem"
-              fontSize={["3vw", "1.25rem"]}
-              color="whitesmoke"
-            >
+            <Code padding="0.25rem" fontSize={["3vw", "1.25rem"]}>
               npx warriors-of-wrath
             </Code>
             into your command line terminal and enjoy the game! I am still
