@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { AiFillSound } from "react-icons/ai";
+import lightBG from "../Music/lightModeBGMusic.mp3";
+import darkBG from "../Music/darkModeBGMusic.mp3";
 
 function Header({ currentPage, handlePageChange }) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -21,21 +23,22 @@ function Header({ currentPage, handlePageChange }) {
     "1px 1px 6px inset gray"
   );
   const fontSrc = useColorModeValue("Bellefair", "Syne Mono");
-  const bgMusic = useColorModeValue(
-    require("../Music/lightModeBGMusic.mp3"),
-    require("../Music/darkModeBGMusic.mp3")
-  );
+  const bgMusic = useColorModeValue(lightBG, darkBG);
 
   const liStyle = {
-    listStyle: "none",
-    display: "inline",
-    marginRight: "3rem",
+    // listStyle: "none",
+    // display: "inline",
+    // marginRight: "3rem",
     fontSize: "2rem",
+    // minW: ["100%"],
   };
 
   const linkStyle = {
     fontFamily: fontSrc,
     textDecoration: "none",
+    listStyle: "none",
+    display: "inline",
+    marginRight: "2rem",
   };
 
   var bg = document.getElementById("bgAudio");
@@ -58,79 +61,91 @@ function Header({ currentPage, handlePageChange }) {
     <Wrap
       minW="100vw"
       padding="2rem"
-      justify="left"
+      justify={["flex-start", "left"]}
       borderBottom={navbarBB}
       bg={navbarBg}
       boxShadow={navbarBS}
     >
-      <Link
-        href="#home"
-        sx={linkStyle}
-        onClick={() => handlePageChange("Home")}
-        color={currentPage === "Home" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>Home </WrapItem>
-      </Link>
-      <Link
-        href="#about"
-        sx={linkStyle}
-        onClick={() => handlePageChange("About")}
-        color={currentPage === "About" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>About</WrapItem>
-      </Link>
-
-      <Link
-        href="#interests"
-        sx={linkStyle}
-        onClick={() => handlePageChange("Interests")}
-        color={currentPage === "Interests" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>Interests</WrapItem>
-      </Link>
-      <Link
-        href="#work"
-        sx={linkStyle}
-        onClick={() => handlePageChange("Work")}
-        color={currentPage === "Work" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>Work</WrapItem>
-      </Link>
-      <Link
-        href="#contact"
-        sx={linkStyle}
-        onClick={() => handlePageChange("Contact")}
-        color={currentPage === "Contact" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>Contact</WrapItem>
-      </Link>
-
-      <Link
-        href="#credits"
-        sx={linkStyle}
-        onClick={() => handlePageChange("Credits")}
-        color={currentPage === "Credits" ? navbarActive : "snow"}
-      >
-        <WrapItem sx={liStyle}>Credits</WrapItem>
-      </Link>
-
-      <Link
-        onClick={toggleColorMode}
-        sx={linkStyle}
-        color={colorMode === "light" ? "snow" : "crimson"}
-        _hover={{ textDecoration: "none" }}
-      >
-        <WrapItem sx={liStyle}>?</WrapItem>
-      </Link>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#home"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Home")}
+          color={currentPage === "Home" ? navbarActive : "snow"}
+        >
+          Home
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#about"
+          sx={linkStyle}
+          onClick={() => handlePageChange("About")}
+          color={currentPage === "About" ? navbarActive : "snow"}
+        >
+          About
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#interests"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Interests")}
+          color={currentPage === "Interests" ? navbarActive : "snow"}
+        >
+          Interests
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#work"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Work")}
+          color={currentPage === "Work" ? navbarActive : "snow"}
+        >
+          Work
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#contact"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Contact")}
+          color={currentPage === "Contact" ? navbarActive : "snow"}
+        >
+          Contact
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          href="#credits"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Credits")}
+          color={currentPage === "Credits" ? navbarActive : "snow"}
+        >
+          Credits
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
+          onClick={toggleColorMode}
+          sx={linkStyle}
+          color={colorMode === "light" ? "snow" : "crimson"}
+          _hover={{ textDecoration: "none" }}
+        >
+          ?
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link sx={linkStyle}>
+          <Icon
+            color={colorMode === "light" ? "snow" : ""}
+            as={AiFillSound}
+            onClick={() => changeAudio()}
+          />
+        </Link>
+      </WrapItem>
       <audio id="bgAudio" loop src={bgMusic}></audio>
-      <Icon
-        // onClick={toggleColorMode}
-        sx={linkStyle}
-        color={currentPage === "Contact" ? navbarActive : "snow"}
-        _hover={{ textDecoration: "none" }}
-        as={AiFillSound}
-        onClick={() => changeAudio()}
-      />
     </Wrap>
   );
 }
