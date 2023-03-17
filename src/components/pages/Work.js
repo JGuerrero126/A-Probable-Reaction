@@ -321,7 +321,7 @@ export default function Work() {
             <Link
               isExternal
               sx={npmStyle}
-              href="https://boiling-mountain-75140.herokuapp.com/"
+              href="https://www.npmjs.com/package/warriors-of-wrath"
             >
               Link to Package on npmjs
             </Link>
