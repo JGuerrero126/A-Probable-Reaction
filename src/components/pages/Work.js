@@ -12,6 +12,7 @@ import {
   Heading,
   Code,
   useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
 
 export default function Work() {
@@ -94,16 +95,16 @@ export default function Work() {
               // onMouseLeave={(e) =>
               //   (e.target.src = require("../../Images/BigScreenshotCC.png"))
               // }
-              src={require("../../Images/BigScreenshotCC.png")}
+              src={require("../../Images/ScreenshotTCRbig.png")}
             />
           </Box>
           <Box textAlign="center">
-            <Text sx={textStyle}>Collection Conquest</Text>
-            <Text sx={textStyle}>MERN Stack</Text>
+            <Text sx={textStyle}>The Cinema Room</Text>
+            <Text sx={textStyle}>React / Python</Text>
             <Link
               isExternal
               sx={linkStyle}
-              href="https://github.com/zionremnant/collection-conquest"
+              href="https://github.com/JGuerrero126/ACT_Group_63"
             >
               GitHub Repository
             </Link>
@@ -111,7 +112,7 @@ export default function Work() {
             <Link
               isExternal
               sx={linkStyle}
-              href="https://dry-island-54181.herokuapp.com/"
+              href="https://the-cinema-room.herokuapp.com"
             >
               Live Website
             </Link>
@@ -203,16 +204,16 @@ export default function Work() {
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
-                src={require("../../Images/ScreenshotTRB.png")}
+                src={require("../../Images/ScreenshotDPR.png")}
               />
             </Box>
             <Box textAlign="center">
-              <Text sx={textStyle}>The Recipe Box</Text>
-              <Text sx={textStyle}> Full Stack</Text>
+              <Text sx={textStyle}>Day Planner Redux</Text>
+              <Text sx={textStyle}>React</Text>
               <Link
                 isExternal
                 sx={linkStyle}
-                href="https://github.com/EthanP94/The-Recipe-Box"
+                href="https://github.com/JGuerrero126/Work_Day_Redux"
               >
                 GitHub Repository
               </Link>
@@ -220,7 +221,7 @@ export default function Work() {
               <Link
                 isExternal
                 sx={linkStyle}
-                href="https://immense-cliffs-14605.herokuapp.com/"
+                href="https://dayplanner-redux.vercel.app"
               >
                 Live Website
               </Link>
@@ -297,6 +298,7 @@ export default function Work() {
             fontSize={["5vw", "2rem"]}
             color="black"
             textAlign="center"
+            mb="1rem"
           >
             WARRIORS OF WRATH
           </Heading>
@@ -322,8 +324,44 @@ export default function Work() {
               isExternal
               sx={npmStyle}
               href="https://www.npmjs.com/package/warriors-of-wrath"
+              mb="1rem"
             >
               Link to Package on npmjs
+            </Link>
+          </Center>
+          <Center>
+            <Divider border="null" mb="1rem" w="90%" />
+          </Center>
+
+          <Heading
+            fontFamily={fontSrc}
+            fontSize={["5vw", "2rem"]}
+            color="black"
+            textAlign="center"
+            mb="1rem"
+          >
+            Mad Birds
+          </Heading>
+          <Text
+            fontSize={["3vw", "1.25rem"]}
+            fontFamily={fontSrc}
+            color="black"
+            textAlign="center"
+            mb="1rem"
+          >
+            Mad Birds is an Angry Birds parody game that was first built using a
+            YouTube tutorial. I have since gone through and added various
+            changes and improvements to make it all my own. Be sure to check it
+            out and have some fun letting those oh so mad birds fly!
+          </Text>
+          <Center>
+            <Link
+              isExternal
+              sx={npmStyle}
+              href="https://play.unity.com/mg/other/madbirds1-0"
+              mb="1rem"
+            >
+              Link to Game On Unity Play
             </Link>
           </Center>
         </Box>

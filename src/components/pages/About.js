@@ -68,7 +68,7 @@ export default function About() {
             <Text
               fontFamily={fontSrc}
               transition="0.5s"
-              fontSize={["1rem", "2.5vw"]}
+              fontSize={["1rem", "2.5vw", "2rem"]}
               textAlign="center"
             >
               I am a Full Stack Web Developer with experience in both team-based
