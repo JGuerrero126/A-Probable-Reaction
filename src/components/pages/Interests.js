@@ -36,11 +36,8 @@ export default function Home() {
   const boxStyle = {
     bg: "black",
     display: "block",
-    mr: "auto",
-    ml: "auto",
-    w: "max-content",
     border: interestsBorder,
-    maxWidth: "90vw",
+    maxWidth: "29.5rem",
   };
 
   return (
@@ -56,7 +53,7 @@ export default function Home() {
           What Inspires Me?
         </Center>
         <Wrap justify="center" spacing="5rem">
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center
               textAlign="center"
               className="berserk"
@@ -65,19 +62,18 @@ export default function Home() {
             >
               BERSERK
             </Center>
-            <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://en.wikipedia.org/wiki/Berserk_(manga)"
-              >
-                <Image
-                  src={berserkCover}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link
+              isExternal
+              href="https://en.wikipedia.org/wiki/Berserk_(manga)"
+            >
+              <Image
+                sx={boxStyle}
+                src={berserkCover}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Both beautiful and horrific, heartwarming and heartbreaking.
               Berserk is one of the most emotionally resonant pieces of fiction
@@ -91,50 +87,48 @@ export default function Home() {
               </Link>{" "}
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="vagabond" fontSize="3rem">
               Vagabond
             </Center>
-            <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://en.wikipedia.org/wiki/Vagabond_(manga)"
-              >
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/VagabondCover.png")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link
+              isExternal
+              href="https://en.wikipedia.org/wiki/Vagabond_(manga)"
+            >
+              <Image
+                sx={boxStyle}
+                // w="29.5rem"
+                h="100%"
+                src={require("../../Images/VagabondCover.png")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Telling the life story of the legendary samurai Musashi Miyamoto;
               Vagabond has much to say about Strength, Masculinity, and finding
               your purpose in life.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="jojo" fontSize="2.5rem">
               JoJo's BIZARRE ADVENTURE
             </Center>
-            <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://www.viz.com/jojo-s-bizarre-adventure"
-              >
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/JojoCover.jpg")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link
+              isExternal
+              href="https://www.viz.com/jojo-s-bizarre-adventure"
+            >
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/JojoCover.jpg")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Infinitely stylish. Infinitely cool. Jojo's Bizarre Adventure is
               both Bizarre and incredibly human with it's portrayal of
@@ -142,72 +136,69 @@ export default function Home() {
               and some of the most deserved beat-downs in all of fiction.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="metallica" fontSize="3rem">
               METALLICA
             </Center>
-            <Box sx={boxStyle}>
-              <Link isExternal href="https://www.metallica.com">
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/MetallicaCover.jpg")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link isExternal href="https://www.metallica.com">
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/MetallicaCover.jpg")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               The Lords Of Metal, the biggest band in the world. Metallica has
               come to my aid in more ways than one when I needed to express
               anger and deal with the way the world is at times.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="bladeRunner" fontSize="3rem">
               BLADE RUNNER 2049
             </Center>
-            <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://www.warnerbros.com/movies/blade-runner-2049"
-              >
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/BladeRunnerCover.jpg")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link
+              isExternal
+              href="https://www.warnerbros.com/movies/blade-runner-2049"
+            >
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/BladeRunnerCover.jpg")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Deeply Existential and full of Melancholy, Blade Runner 2049 is a
               masterpiece of the Cyberpunk Genre which has so much to say about
               being human and the nature of humanity itself.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="eldenRing" fontSize="3rem">
               Elden Ring
             </Center>
-            <Box sx={boxStyle}>
-              <Link
-                isExternal
-                href="https://en.bandainamcoent.eu/elden-ring/elden-ring"
-              >
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/EldenRingMovieCover.jpg")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link
+              isExternal
+              href="https://en.bandainamcoent.eu/elden-ring/elden-ring"
+            >
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/EldenRingMovieCover.jpg")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Brutally challenging yet Infinitely Inspiring, Elden Ring is one
               of my favorite games of all time. Taking heavy inspiration from
@@ -215,22 +206,21 @@ export default function Home() {
               odds.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="firePunch" fontSize="3rem">
               FIRE PUNCH
             </Center>
-            <Box sx={boxStyle}>
-              <Link isExternal href="https://www.viz.com/fire-punch">
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/FirePunchCover.png")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link isExternal href="https://www.viz.com/fire-punch">
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/FirePunchCover.png")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Utterly heartbreaking yet full of hope and love, Fire Punch talks
               much about the ideas of suffering and life. Do we only exist to
@@ -238,25 +228,24 @@ export default function Home() {
               answers that with a single word, "Live".
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center textAlign="center" className="hotline" fontSize="3rem">
               HOTLINE
             </Center>
             <Center textAlign="center" className="miami" fontSize="3rem">
               MIAMI
             </Center>
-            <Box sx={boxStyle}>
-              <Link isExternal href="https://www.hotlinemiami.com">
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/HotlineMiamiCover.png")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link isExternal href="https://www.hotlinemiami.com">
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/HotlineMiamiCover.png")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               Hypnotic, Pulse Pounding, Thought-Provoking. Hotline Miami is all
               of those things and more. Somehow, a video game about mercilessly
@@ -264,7 +253,7 @@ export default function Home() {
               more than that.
             </Text>
           </VStack>
-          <VStack maxW="85vw">
+          <VStack maxW="min-content">
             <Center
               textAlign="center"
               className="metalGearSolid"
@@ -272,18 +261,17 @@ export default function Home() {
             >
               METAL GEAR SOLID
             </Center>
-            <Box sx={boxStyle}>
-              <Link isExternal href="https://en.wikipedia.org/wiki/Metal_Gear">
-                <Image
-                  w="29.5rem"
-                  h="100%"
-                  src={require("../../Images/MetalGearSolid4Cover.jpg")}
-                  filter={
-                    colorMode === "light" ? "" : "saturate(0) contrast(115%)"
-                  }
-                />
-              </Link>
-            </Box>
+            <Link isExternal href="https://en.wikipedia.org/wiki/Metal_Gear">
+              <Image
+                sx={boxStyle}
+                w="29.5rem"
+                h="100%"
+                src={require("../../Images/MetalGearSolid4Cover.jpg")}
+                filter={
+                  colorMode === "light" ? "" : "saturate(0) contrast(115%)"
+                }
+              />
+            </Link>
             <Text sx={textStyle}>
               The King of Tactical Espionage Action. The brainchild of a madman.
               Metal Gear Solid is a series very close to my heart, full of

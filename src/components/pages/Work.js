@@ -13,6 +13,7 @@ import {
   Code,
   useColorModeValue,
   Divider,
+  Container,
 } from "@chakra-ui/react";
 
 export default function Work() {
@@ -365,6 +366,66 @@ export default function Work() {
             </Link>
           </Center>
         </Box>
+        <Center sx={headingStyle}>Black Box Testing</Center>
+        <Container
+          border=".5rem solid black"
+          // borderRadius="2rem"
+          fontSize={["3vw", "1.25rem"]}
+          color="whitesmoke"
+          background="grey"
+          boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset black"
+          padding="1rem"
+          maxW="max-content"
+          minW="min-content"
+        >
+          <Box>
+            <Text
+              fontSize={["3vw", "1.25rem"]}
+              fontFamily={fontSrc}
+              color="black"
+              textAlign="center"
+              mb="1rem"
+            >
+              The following are playlists I made of informal Black Box Testing
+              done by myself. Each playlist contains system and version
+              information on the full playlist page and shortened bug reports in
+              the description of each video.
+            </Text>
+          </Box>
+          <Wrap justify="center" spacing="2rem">
+            <Box
+              // boxShadow="0rem 0rem 2rem black"
+              width={["90vw", "560px"]}
+              height={["13rem", "315px"]}
+            >
+              {" "}
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/videoseries?list=PLxLBzij5g12IVrsezT-UdkhrLe0yUosqM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </Box>
+            <Box
+              // boxShadow="0rem 0rem 2rem black"
+              width={["90vw", "560px"]}
+              height={["13rem", "315px"]}
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/videoseries?list=PLxLBzij5g12LqSb0gl2gf0t4DHpI1gjgU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </Box>
+          </Wrap>
+        </Container>
         <Center sx={headingStyle}>Short Films</Center>
         <Wrap justify="center" spacing="2rem">
           <Box
