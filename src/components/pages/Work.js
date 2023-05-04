@@ -31,6 +31,21 @@ export default function Work() {
   );
   const boxBottom = useColorModeValue("0.5rem groove gray", "3rem solid white");
   const imgFilter = useColorModeValue("", "saturate(0) contrast(105%)");
+  const vgBG = useColorModeValue("#E32227", "snow");
+  const vgLinkColor = useColorModeValue("", "#E32227");
+  const vgBoxShadow = useColorModeValue(
+    "0rem 0rem 2rem black, 0rem 0rem 2rem inset red",
+    "0rem 0rem 2rem white"
+  );
+  const vgBorder = useColorModeValue(".25rem solid red", "");
+  const codeColor = useColorModeValue("black", "#E32227");
+  const bbtBG = useColorModeValue("#1c1c1c", "black");
+  const bbtBorder = useColorModeValue(".5rem solid black", ".5rem solid white");
+  const bbtBoxShadow = useColorModeValue(
+    "0rem 0rem 2rem black, 0rem 0rem 2rem inset black",
+    "0rem 0rem 2rem white, 0rem 0rem 2rem inset white"
+  );
+  const bbtTextColor = useColorModeValue("white", "white");
 
   const headingStyle = {
     fontFamily: fontSrc,
@@ -73,6 +88,7 @@ export default function Work() {
     fontSize: "140%",
     transition: "0.5s",
     _hover: { color: npmHover, textDecoration: "underline" },
+    textColor: vgLinkColor,
   };
 
   return (
@@ -285,14 +301,15 @@ export default function Work() {
         </Wrap>
         <Center sx={headingStyle}>Video Games</Center>
         <Box
-          border=".25rem solid red"
+          border={vgBorder}
           borderRadius="2rem"
           fontSize={["3vw", "1.25rem"]}
           color="whitesmoke"
-          background="#E32227"
-          boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset red"
+          background={vgBG}
+          boxShadow={vgBoxShadow}
           mr="5rem"
           ml="5rem"
+          padding="1rem"
         >
           <Heading
             fontFamily={fontSrc}
@@ -313,7 +330,11 @@ export default function Work() {
             Warriors Of Wrath is a text-based fighting game that you can access
             anywhere using NPM which is the Node Package Manager. If you have
             Node installed then you can just type
-            <Code padding="0.25rem" fontSize={["3vw", "1.25rem"]}>
+            <Code
+              color={codeColor}
+              padding="0.25rem"
+              fontSize={["3vw", "1.25rem"]}
+            >
               npx warriors-of-wrath
             </Code>
             into your command line terminal and enjoy the game! I am still
@@ -368,37 +389,32 @@ export default function Work() {
         </Box>
         <Center sx={headingStyle}>Black Box Testing</Center>
         <Container
-          border=".5rem solid black"
-          // borderRadius="2rem"
+          border={bbtBorder}
           fontSize={["3vw", "1.25rem"]}
           color="whitesmoke"
-          background="grey"
-          boxShadow="0rem 0rem 2rem black, 0rem 0rem 2rem inset black"
+          background={bbtBG}
+          boxShadow={bbtBoxShadow}
           padding="1rem"
-          maxW="max-content"
-          minW="min-content"
+          // maxW="max-content"
+          // minW="min-content"
         >
           <Box>
-            <Text
+            <Center
               fontSize={["3vw", "1.25rem"]}
               fontFamily={fontSrc}
-              color="black"
+              color={bbtTextColor}
               textAlign="center"
               mb="1rem"
+              // w="50%"
             >
               The following are playlists I made of informal Black Box Testing
               done by myself. Each playlist contains system and version
               information on the full playlist page and shortened bug reports in
               the description of each video.
-            </Text>
+            </Center>
           </Box>
-          <Wrap justify="center" spacing="2rem">
-            <Box
-              // boxShadow="0rem 0rem 2rem black"
-              width={["90vw", "560px"]}
-              height={["13rem", "315px"]}
-            >
-              {" "}
+          <Wrap justify="center" spacing="2rem" flexWrap="wrap">
+            <Box width={["90vw", "560px"]} height={["13rem", "315px"]}>
               <iframe
                 width="100%"
                 height="100%"
@@ -409,11 +425,7 @@ export default function Work() {
                 allowfullscreen
               ></iframe>
             </Box>
-            <Box
-              // boxShadow="0rem 0rem 2rem black"
-              width={["90vw", "560px"]}
-              height={["13rem", "315px"]}
-            >
+            <Box width={["90vw", "560px"]} height={["13rem", "315px"]}>
               <iframe
                 width="100%"
                 height="100%"
@@ -426,7 +438,9 @@ export default function Work() {
             </Box>
           </Wrap>
         </Container>
-        <Center sx={headingStyle}>Short Films</Center>
+        <Center sx={headingStyle} color="snow">
+          Short Films
+        </Center>
         <Wrap justify="center" spacing="2rem">
           <Box
             boxShadow="0rem 0rem 2rem black"
