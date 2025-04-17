@@ -78,6 +78,11 @@
   color: white;
 }
 
+.surfcurse {
+  font-family: "Lacquer", system-ui;
+  color: #aa0000;
+}
+
 .bladeRunner {
   font-family: "Rubik Glitch", cursive;
   color: aqua;

@@ -137,24 +137,25 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack maxW="min-content">
-            <Center textAlign="center" className="metallica" fontSize="3rem">
-              METALLICA
+            <Center textAlign="center" className="surfcurse" fontSize="3rem">
+              Surf Curse
             </Center>
-            <Link isExternal href="https://www.metallica.com">
+            <Link isExternal href="https://www.surfcurse.com">
               <Image
                 sx={boxStyle}
                 w="29.5rem"
                 h="100%"
-                src={require("../../Images/MetallicaCover.jpg")}
+                src={require("../../Images/surfcurse.png")}
                 filter={
                   colorMode === "light" ? "" : "saturate(0) contrast(115%)"
                 }
               />
             </Link>
             <Text sx={textStyle}>
-              The Lords Of Metal, the biggest band in the world. Metallica has
-              come to my aid in more ways than one when I needed to express
-              anger and deal with the way the world is at times.
+              Melodic and full of heart, Surf Curse is one of my favorite groups
+              in all of music. Both aloof yet heartbreakingly serious, their
+              songs are anthems that hardly ever leave my mind and always tear
+              into my heart.
             </Text>
           </VStack>
           <VStack maxW="min-content">

@@ -38,6 +38,14 @@ export default function Work() {
     "0rem 0rem 2rem white"
   );
   const vgBorder = useColorModeValue(".25rem solid red", "");
+  const wBG = useColorModeValue("black", "crimson");
+  const wLinkColor = useColorModeValue("crimson", "black");
+  const wBoxShadow = useColorModeValue(
+    "0rem 0rem 2rem white, 0rem 0rem 2rem inset white",
+    "0rem 0rem 2rem red, 0rem 0rem 2rem inset red"
+  );
+  const wBorder = useColorModeValue(".25rem solid white", ".25rem solid red");
+  const wHover = useColorModeValue("pink", "white");
   const codeColor = useColorModeValue("black", "#E32227");
   const bbtBG = useColorModeValue("#1c1c1c", "black");
   const bbtBorder = useColorModeValue(".5rem solid black", ".5rem solid white");
@@ -89,6 +97,15 @@ export default function Work() {
     transition: "0.5s",
     _hover: { color: npmHover, textDecoration: "underline" },
     textColor: vgLinkColor,
+  };
+
+  const wLinkStyle = {
+    fontFamily: fontSrc,
+    textDecoration: "none",
+    fontSize: "140%",
+    transition: "0.5s",
+    _hover: { color: wHover, textDecoration: "underline" },
+    textColor: wLinkColor,
   };
 
   return (
@@ -299,6 +316,124 @@ export default function Work() {
             </Box>
           </VStack>
         </Wrap>
+        <Center sx={headingStyle}>Writing</Center>
+        <Box
+          border={wBorder}
+          borderRadius="2rem"
+          fontSize={["3vw", "1.25rem"]}
+          color="whitesmoke"
+          background={wBG}
+          boxShadow={wBoxShadow}
+          mr="5rem"
+          ml="5rem"
+          padding="1rem"
+        >
+          <Heading
+            fontFamily={fontSrc}
+            fontSize={["5vw", "2rem"]}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            Essays on Pop Culture
+          </Heading>
+          <Text
+            fontSize={["4.25vw", "1.75rem"]}
+            fontFamily={fontSrc}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            That's Life: How The Joke Was On Arthur Fleck All Along.
+          </Text>
+          <Text
+            fontSize={["3vw", "1.25rem"]}
+            fontFamily={fontSrc}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            This is an essay about the recent JOKER films made by Todd Philips,
+            with a focus on the character arc and ultimate fate of the
+            protagonist Arthur Fleck aka "Joker" and my thoughts surrounding
+            him.
+          </Text>
+          <Center>
+            <Link
+              isExternal
+              sx={wLinkStyle}
+              href="https://open.substack.com/pub/jerryguerrero/p/thats-life?r=5e4lg0&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              mb="1rem"
+            >
+              Click Here To Read!
+            </Link>
+          </Center>
+          <Center>
+            <Divider border="null" mb="1rem" w="90%" />
+          </Center>
+          <Heading
+            fontFamily={fontSrc}
+            fontSize={["5vw", "2rem"]}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            Reviews
+          </Heading>
+          <Text
+            fontSize={["4.25vw", "1.75rem"]}
+            fontFamily={fontSrc}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            Death Grips - The Money Store - Album Review
+          </Text>
+          <Text
+            fontSize={["3vw", "1.25rem"]}
+            fontFamily={fontSrc}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            This is an album review for the album "The Money Store" by the group
+            "Death Grips". It highlights the themes and lyrics of the album as
+            well as diving into my own feelings into each track.
+          </Text>
+          <Center>
+            <Link
+              isExternal
+              sx={wLinkStyle}
+              href="https://open.substack.com/pub/jerryguerrero/p/the-money-store-album-review?r=5e4lg0&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+              mb="1rem"
+            >
+              Click Here To Read!
+            </Link>
+          </Center>
+          <Center>
+            <Divider border="null" mb="1rem" w="90%" />
+          </Center>
+          <Heading
+            fontFamily={fontSrc}
+            fontSize={["5vw", "2rem"]}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            Screenplays
+          </Heading>
+          <Text
+            fontSize={["3vw", "1.25rem"]}
+            fontFamily={fontSrc}
+            color="snow"
+            textAlign="center"
+            mb="1rem"
+          >
+            Due to the sensitive nature of sharing creative work online,
+            screenplays written by me are available upon request. Feel free to
+            reach out via email and I'll be happy to share!
+          </Text>
+        </Box>
         <Center sx={headingStyle}>Video Games</Center>
         <Box
           border={vgBorder}

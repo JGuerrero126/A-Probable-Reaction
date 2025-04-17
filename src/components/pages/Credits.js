@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      <Box paddingBottom="3rem" w="100vw" h={["100%", "100vh"]} bg={creditsBg}>
+      <Box paddingBottom="3rem" w="100vw" h={["100%"]} bg={creditsBg}>
         <Text
           fontSize={["10vw", "3rem"]}
           fontFamily={fontSrc}
