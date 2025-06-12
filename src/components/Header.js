@@ -108,6 +108,16 @@ function Header({ currentPage, handlePageChange }) {
       </WrapItem>
       <WrapItem sx={liStyle}>
         <Link
+          href="#art"
+          sx={linkStyle}
+          onClick={() => handlePageChange("Art")}
+          color={currentPage === "Art" ? navbarActive : "snow"}
+        >
+          Art
+        </Link>
+      </WrapItem>
+      <WrapItem sx={liStyle}>
+        <Link
           href="#contact"
           sx={linkStyle}
           onClick={() => handlePageChange("Contact")}

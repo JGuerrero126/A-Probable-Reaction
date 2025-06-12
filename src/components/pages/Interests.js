@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import berserkCover from "../../Images/BerserkCover.png";
-import cyberpunkFont from "../../Fonts/Cyberpunk-Regular.ttf";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();

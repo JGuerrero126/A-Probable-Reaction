@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Interests from "./pages/Interests";
 import Work from "./pages/Work";
+import Art from "./pages/Art";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
 import Credits from "./pages/Credits";
@@ -24,6 +25,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === "Work") {
       return <Work />;
+    }
+    if (currentPage === "Art") {
+      return <Art />;
     }
     if (currentPage === "Contact") {
       return <Contact />;
