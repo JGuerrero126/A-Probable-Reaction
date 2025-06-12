@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import berserkCover from "../../Images/BerserkCover.png";
+import cyberpunkFont from "../../Fonts/Cyberpunk-Regular.ttf";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -159,8 +160,8 @@ export default function Home() {
             </Text>
           </VStack>
           <VStack maxW="min-content">
-            <Center textAlign="center" className="bladeRunner" fontSize="3rem">
-              BLADE RUNNER 2049
+            <Center textAlign="center" className="cyberpunk" fontSize="3rem">
+              Cyberpunk
             </Center>
             <Link
               isExternal
@@ -170,16 +171,18 @@ export default function Home() {
                 sx={boxStyle}
                 w="29.5rem"
                 h="100%"
-                src={require("../../Images/BladeRunnerCover.jpg")}
+                src={require("../../Images/cyberpunkPoster.jpg")}
                 filter={
                   colorMode === "light" ? "" : "saturate(0) contrast(115%)"
                 }
               />
             </Link>
             <Text sx={textStyle}>
-              Deeply Existential and full of Melancholy, Blade Runner 2049 is a
-              masterpiece of the Cyberpunk Genre which has so much to say about
-              being human and the nature of humanity itself.
+              Despite a rough launch, Cyberpunk 2077 is a shining example of
+              dedication paying off as it has more than earned its spot of one
+              of the greatest games of all time for me. Its beauty is laced with
+              biting political commentary and a story of friendship, loss and
+              the nature of identity.
             </Text>
           </VStack>
           <VStack maxW="min-content">

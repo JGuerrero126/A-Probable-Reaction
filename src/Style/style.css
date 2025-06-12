@@ -38,6 +38,12 @@
   }
 } */
 
+@font-face {
+  font-family: "Cyberpunk-Regular";
+  src: local("Cyberpunk-Regular"),
+    url(./../Fonts/Cyberpunk-Regular.ttf) format("truetype");
+}
+
 .footer {
   font-size: smaller;
   position: fixed;
@@ -86,6 +92,11 @@
 .bladeRunner {
   font-family: "Rubik Glitch", cursive;
   color: aqua;
+}
+
+.cyberpunk {
+  font-family: "Cyberpunk-Regular", cursive;
+  color: rgb(251, 255, 0);
 }
 
 .eldenRing {

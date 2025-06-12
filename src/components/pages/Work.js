@@ -292,16 +292,16 @@ export default function Work() {
             <Box sx={boxStyle}>
               <Image
                 sx={imageStyle}
-                src={require("../../Images/ScreenshotTCZ.png")}
+                src={require("../../Images/Screenshot 2025-06-12 013252.png")}
               />
             </Box>
             <Box textAlign="center">
-              <Text sx={textStyle}>The Cyber Zone</Text>
-              <Text sx={textStyle}>Full Stack Blog</Text>
+              <Text sx={textStyle}>Tranquility Spa & Salon</Text>
+              <Text sx={textStyle}>React/CSS</Text>
               <Link
                 isExternal
                 sx={linkStyle}
-                href="https://github.com/JGuerrero126/The_CYBER_Zone"
+                href="https://github.com/JGuerrero126/Tranquility"
               >
                 GitHub Repository
               </Link>
@@ -309,7 +309,7 @@ export default function Work() {
               <Link
                 isExternal
                 sx={linkStyle}
-                href="https://boiling-mountain-75140.herokuapp.com/"
+                href="https://tranquility-liart.vercel.app"
               >
                 Live Website
               </Link>
